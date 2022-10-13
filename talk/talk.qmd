@@ -1,0 +1,619 @@
+---
+title: "Power of A/B Testing"
+subtitle: "Beyond user feedback"
+bibliography: references.bib
+author: Evelyn J. Boettcher
+format:
+    revealjs:
+        incremental: false
+fig-cap-location: margin
+---
+
+## A / B Testing 
+
+A/B testing is a **randomized** controlled experiment. 
+
+<br>
+There are two tests: A and B, in which a single variable adjusted (B Test).
+<br>
+<br>
+This variation, **might** affect a user's behavior.
+<br>
+
+![](./img/ab.svg)
+
+<br>
+
+### Goal: Increase End User's Objective
+
+* **Business:** Income increases >> Costs of change
+* **Health Care:**  Health increases >> Side effect
+
+:::{.notes}
+* Not explicitly telling users they are in a test
+* "User" is loosely used.  It could be servers, Say testing speed: Google vs AWS cloud
+
+:::
+
+---
+
+### Weekly Planner Choices
+
+::::{.columns}
+:::{.column width="15%"}
+:::
+:::{.column width="35%"}
+
+
+#### A
+
+![](img/CIRCA_JOTLET_WEEKLY.webp){width=200}
+
+:::
+:::{.column}
+
+#### B
+
+![](img/stamp-weekly.jpg){width=200}
+
+:::
+:::{.column width="15%"}
+:::
+::::
+
+
+#### So why do A/B Testing
+
+::: {.incremental}
+
+- Why spend the resources to do tests
+- Why risk angering your customers with changes?
+- I got data miners, I do not need tests!
+  - I can find my answers in the data, thank you very much
+- I am a developer, I don't need to know the business side
+
+:::
+
+---
+
+### Life is complicated
+
+Subject matter experts (SME) from Microsoft, Netflixs etc, find when they implement changes 
+that only a small fraction of their ideas have the planned outcome [@sweet].
+
+<br>
+This is because domain knowledge only gets you so far.
+<br>
+
+Even though we are isolating a single variable, 
+that variable interacts with a million other variables.
+<br>
+You simply can not model everything or know everything.
+
+::::{.columns}
+:::{.column width=70%}
+
+![](./img/10_lightbulb.webp){width=90%}
+
+:::
+::: {.column width=30%}
+
+<br>
+<br>
+<br>
+
+::: {.incremental}
+
+- #### Implemented changes can hurt business
+
+:::
+:::
+::::
+
+---
+
+## Gedanken: 
+
+::::{.columns}
+:::{.column width=70%}
+### Trader Janes has a New Pizza
+Say there is a grocer called Trader Janes and it wants to add a new pizza to its line up.
+<br>
+However, they need to keep the same number of types it sells a constant.
+Freezer only holds N pizzas.
+
+<br>
+They will have to remove one pizza from their lineup to add the new item.
+<br>
+<br>
+<br>
+
+### Typical Work flow
+
+- Marketing asks a _Data Miner_ to rank popularity of pizza.
+- The Data Miner finds the pizza that sells the least.
+- Stores remove that pizza.
+- Stores add new pizza.
+
+:::
+:::{.column width=29%}
+
+![](./img/yummy-pizza-1327587.jpg){width=270,}
+![](./img/marketing.svg)
+:::
+::::
+
+
+[Arjun Kartha's pizza pic](https://www.freeimages.com/photo/yummy-pizza-1327587)
+
+---
+
+::::{.columns}
+:::{.column width=60%}
+
+### New Pizza added!!!
+<br>
+
+
+
+#### Unfortunately:  
+
+A week later sales go down.
+
+<br>
+<br>
+
+:::
+:::{.column width=30%}
+
+![](./img/sales_down.webp)
+
+:::
+::::
+
+### What happened?
+
+::: {.incremental}
+
+- Don't know, because the store implemented many changes that week!
+- It's the week after Thanksgiving and sales always go down that week.
+- Turns out there was a small group of heavy spenders that love this pizza.
+
+:::
+
+<br>
+<br>
+
+
+#### A / B Testing help predict what changes will increase the bottom line.
+
+---
+
+## A / B Testing Limitations
+
+A/B Testing is used to clarify a vision, but does not create vision.
+
+<br>
+
+For example, an ophthalmologist quickly gives you a set of two choices; 
+1 or 2 (2 or 3) that lead to sharpen vision.  Their test, like A/B, can not give you vision.
+
+<br>
+
+
+#### Though without a clarity, </br> a vision has serious limitation.
+
+![](./img/glasses.webp){fig-align=center width=70%}
+
+---
+
+## A/B Testing and DevOps
+
+
+::::{.columns}
+:::{.column width=25%}
+
+<br>
+<br>
+
+How does A/B testing fit  
+into the DevOps?
+
+<br>
+<br>
+
+
+
+* (from The Pheonix Project [@pheonix])
+
+:::
+:::{.column width=75%}
+
+### The Three Ways for DevOps 
+
+**The First Way:** Principles of Flow
+
+- Making work “visible” by defining a work flow
+
+
+**The Second Way:** Principles of Feedback
+
+- Have fast and constant feedback cycles throughout all stages of a development
+- Don't throw it over the wall 
+    
+    
+**Third Way:** Principles of Continuous Learning
+
+- Create a culture of continual learning and experimentation
+  
+:::
+::::
+
+![](./img/devops_ways.svg){fig-align=center width=75%}
+
+
+---
+
+### A/B Testing and the Three ways
+
+![](./img/devops_ways.svg){width=550px}
+
+::::{.columns}
+:::{.column width=65%}
+
+<br>
+
+
+A/B Testing is an extension of the<br> second and third ways.  
+Feedback will be the results of the A/B Testing.
+<br>
+<br>
+
+#### However
+##### Experimentation happens in operations!
+
+:::
+:::{.column width=35%}
+
+![](./img/devops_ways-AB.svg)
+
+:::
+::::
+
+---
+
+## A/B Tests
+### The good, the bad and the ugly
+<br>
+
+
+:::: {.columns }
+::: {.column width=20% }
+:::
+::: {.column width=60% }
+
+
+#### Rewards
+
+- Increased companies goals:
+  - Business: Profits
+  - Healthcare: Health
+  - Defence: Situational Awareness
+  
+:::
+::::
+
+<br>
+
+::::{.columns}
+:::{.column}
+
+#### Risks
+
+- Test cost time and money
+- Don't know what percent of risk is acceptable
+  - Medical and Defence will have lower threshold of risk
+- Upset customers
+- Change makes things worse
+
+
+:::
+:::{.column}
+
+
+#### Mitigation 
+
+- Have the smallest test possible
+- 5% False Positive 
+- 20% False Negative
+  - Typical of non life critical changes
+- Minimize number of samples
+
+:::
+::::
+
+
+---
+
+<br>
+<br> 
+
+### How do you minimize the number of samples?
+
+<br>
+
+Want an N that will have  5% false positive and 20% false negative.
+
+<br>
+
+$$
+N = ?
+$$
+
+---
+
+### Use Statistics 
+
+<br>
+
+Defines minimum number of samples (**N**) as:
+
+$$
+N > 2.48 \left( \frac{\sigma_\Delta}{\Delta} \right)^2
+$$
+
+<hr>
+
+- $\Delta$: How much of a difference is needed to make the change
+  - It cost money to make a change
+  - Increase to bottom line needs to be significant, to accept risk
+    -  _Example_: Trader Janes Pizza needs sales to increase by 3%
+- $\sigma_\Delta$: estimated by business logs
+  - $\sigma_\Delta$ = $~\sqrt{2 \sigma_{log}^2}$
+    - $\sigma_{log}$: How much does sales fluctuate 
+
+---
+
+### Important to note
+
+<br>
+
+#### Unless there is a clear, measurable advantage, no change should occur.
+
+<br>
+
+#### There is no guarantee that change will be effective.
+    
+
+---
+
+<br><br><br>
+
+### Where does 2.48 comes from?
+
+---
+
+## Rules of Thumb: 20 / 5 Rule
+
+<br>
+
+#### Assume there is no difference between A and B
+
+$$
+\Delta = 0 \\
+ \Delta = B - A 
+$$
+
+<br>
+<hr>
+::::{.columns}
+:::{.column}
+
+**False positive** 
+
+- A is better but, you implemented B
+- incurs an explicit cost
+
+
+<br>
+
+:::
+:::{.column}
+
+**False negative** 
+
+- B is better but, you stuck with A
+- incurs an explicit cost
+
+<br>
+
+:::
+::::
+<hr>
+
+::::{.columns}
+:::{.column}
+
+| $\alpha$ == **False Positive rate** (5%: 1.64)
+
+<br>
+
+| You can assume B is better than A
+
+
+:::
+:::{.column}
+
+| $\beta$== **False Negative rate** (20%: 0.84)
+
+<br>
+
+| You can assume A is better than B
+
+:::
+::::
+
+---
+
+#### From Standard Normal Distribution
+
+::::{.columns}
+:::{.column width=25%}
+
+
+**Mean** is 0
+
+<br>
+
+**Standard deviation:** <br>
+$\sigma$ = 1
+
+----
+<br>
+
+| $Z_{score}$ = -1.64 (**5%**)
+
+| $Z_{score}$ = 0.84 (**20%**)
+
+<br>
+
+$$
+1.64 + 0.84 = 2.48
+$$
+
+<br>
+<br>
+<br>
+<br>
+
+Graph from [@norm-dist]
+
+:::
+:::{.column width=74%}
+
+<iframe width=720px height=530px src="norm-dist.html"></iframe>
+
+:::
+::::
+
+---
+
+
+
+
+::::{.columns}
+:::{.column}
+
+### False Positive 
+
+| $\alpha$ == **False Positive rate** (5%: 1.64)
+
+<br>
+
+|  Assume: B is better than A
+
+
+:::
+:::{.column}
+
+### False Negative 
+
+| $\beta$== **False Negative rate** (20%: 0.84)
+
+<br>
+
+| Assume: A is better than B
+
+:::
+::::
+
+<br>
+<br>
+
+
+::::{.columns}
+:::{.column}
+
+
+  
+![](./img/z-score.png){width=450}
+
+:::
+:::{.column}
+
+![](./img/z-score-20.png){width=485}
+
+:::
+::::
+
+---
+
+
+## Quotes
+
+Knowledge discovery in databases (KDD) is the process of discovering useful knowledge from a collection of data.
+
+The Phoenix Project Quotes Showing 1-30 of 310
+“Improving daily work is even more important than doing daily work.” [@pheonix]
+
+“until code is in production, no value is actually being generated, because it’s merely WIP stuck in the system.” [@pheonix]
+
+“every work center is made up of four things: the machine, the man, the method, and the measures.” [@pheonix]
+
+[@pheonix]
+Framework #1: The Phoenix Project/DevOps Handbook’s Three Ways
+If you’ve read either The Phoenix Project or The DevOps Handbook, you’ve been introduced to The Three Ways framework for DevOps:
+
+The First Way: Principles of Flow
+The Second Way: Principles of Feedback
+The Third Way: Principles of Continuous Learning
+The First Way: Principles of Flow
+The First Way is mostly concerned with accelerating the “flow” of work throughout a process. Gene Kim also refers to the First Way as Systems Thinking in his article The Three Ways: Principles Underpinning DevOps. Whether you’re calling it Flow or Systems Thinking, the principles underpinning the First Way are working toward the same end: viewing the flow of work as one continuous system (unsiloed) that can be continually refined and optimized.
+
+Some of the key principles of the First Way are:
+
+Making work “visible”. Unlike manufacturing processes, which are easily observable on a plant floor, the flow of software through its development lifecycle is not easily seen.
+Using methods such as Kanban boards can surface the activities going on behind the scenes, 
+by showing the left-to-right movement of a user story through the development phases.
+
+Limiting work-in-progress (WIP). Keeping work-in-progress to a minimum has also been shown to accelerate work flow, because it minimizes multi-tasking and context-switching.
+
+Reducing batch sizes. “Chunking” work into smaller pieces like a two-week sprint can also help deliver features (albeit smaller ones) and bug fixes to the customer faster. Issues are often caught earlier when those updates and additions are released sooner.
+
+Reducing hand-offs between teams. The risk of “dropping the baton” increases as the hand-offs do. Although hand-offs can’t be completely minimized, the key is to keep the teams in tight communication with one another so that the hand-off itself is almost a non-event rather than a large ordeal with the potential for communication missteps along the way.
+
+Identifying and removing constraints and waste. Constraints might be bottlenecks in the process, such as environments, test setup, and overly tight architecture, while waste includes things like manual work, heroics, and context-switching.
+The Second Way: Principles of Feedback
+The Second Way works to enable fast and constant feedback cycles throughout all stages of a development cycle.
+
+Some of the key principles of the Second Way are:
+
+Swarming and solving problems to build new knowledge. 
+This principle fits into the “fail fast” mentality, so that teams can find issues with an implementation as soon as possible and address them early and often as iterations continue.
+
+Pushing quality closer to source. This principle is at the core of the DevSecOps movement, 
+which is concerned with addressing security concerns during the development cycle, 
+instead of at the end, when rework to remediate is more difficult and costly.
+
+Optimizing for downstream work centers. 
+This principle works against the “throw it over the wall” mentality,
+by underscoring that development should be just as invested in their application being deployable, working with operations to bridge that gap (and vice versa).
+The Third Way: Principles of Continuous Learning
+The Third Way seeks to create a culture of continual learning and experimentation within the development organization.
+
+Some of the key principles of the Third Way are:
+
+Enabling organizational learning and a safety culture. Leaders must help “set the tone” for the organization, making it okay to learn, make mistakes, and try again.
+
+Institutionalizing the improvement of daily work. Improving what you do and how you accomplish it should be part of everyone’s daily thinking and call to action.
+
+Transforming local discoveries to global improvements. Surfacing and sharing improvements at all levels will help enable a “bubble up” culture of continuous improvement.
+
+Injecting resilience patterns into daily work. Some examples might include rehearsing failures, and working toward improving key metrics for deployment.
+
+Leaders enforcing a learning culture. Organization-wide learning is unlikely to take hold and become pervasive unless it is sanctioned and exemplified by its leaders. So being intentional about communicating the value of learning and problem-solving is crucial to building that culture.
+
+### References
+
+::: {#refs}
+:::

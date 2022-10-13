@@ -1,0 +1,44 @@
+<svg width="197pt" height="249pt" viewBox="0 0 197 249" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 244.8)">
+<title>g</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-244.8 193.0233,-244.8 193.0233,4 -4,4"></polygon>
+<text text-anchor="middle" x="94.5116" y="-217" font-family="comfortaa,Roboto" font-size="22.00" fill="#0000ff">A/B Testing and </text>
+<text text-anchor="middle" x="94.5116" y="-190.6" font-family="comfortaa,Roboto" font-size="22.00" fill="#0000ff"> the Three Ways</text>
+<!-- three -->
+<g id="node1" class="node">
+<title>three</title>
+<ellipse fill="transparent" stroke="transparent" stroke-width="2" cx="98.0891" cy="-162" rx="89.1433" ry="18"></ellipse>
+<text text-anchor="middle" x="98.0891" y="-157.8" font-family="comfortaa,Roboto,Arial,sans-serif" font-size="14.00" fill="#000000">Is there a better way</text>
+</g>
+<!-- c -->
+<g id="node2" class="node">
+<title>c</title>
+<ellipse fill="transparent" stroke="transparent" stroke-width="2" cx="56.0891" cy="-90" rx="56.1782" ry="18"></ellipse>
+<text text-anchor="middle" x="56.0891" y="-85.8" font-family="comfortaa,Roboto,Arial,sans-serif" font-size="14.00" fill="#000000">Experiment</text>
+</g>
+<!-- three&#45;&gt;c -->
+<g id="edge2" class="edge">
+<title>three-&gt;c</title>
+<path fill="none" stroke="#ffa500" stroke-width="3" d="M87.4907,-143.8314C82.6791,-135.5829 76.8928,-125.6635 71.6052,-116.5992"></path>
+<polygon fill="#ffa500" stroke="#ffa500" stroke-width="3" points="74.6005,-114.7876 66.5385,-107.9134 68.5541,-118.3148 74.6005,-114.7876"></polygon>
+</g>
+<!-- two -->
+<g id="node3" class="node">
+<title>two</title>
+<ellipse fill="none" stroke="#006400" stroke-width="2" cx="98.0891" cy="-18" rx="90.8685" ry="18"></ellipse>
+<text text-anchor="middle" x="98.0891" y="-13.8" font-family="comfortaa,Roboto,Arial,sans-serif" font-size="14.00" fill="#000000">Fast feedback cycles</text>
+</g>
+<!-- c&#45;&gt;two -->
+<g id="edge3" class="edge">
+<title>c-&gt;two</title>
+<path fill="none" stroke="#ffa500" stroke-width="3" d="M66.4711,-72.2022C71.2809,-63.9569 77.0991,-53.9828 82.4265,-44.8501"></path>
+<polygon fill="#ffa500" stroke="#ffa500" stroke-width="3" points="85.5192,-46.4945 87.5347,-36.0931 79.4727,-42.9674 85.5192,-46.4945"></polygon>
+</g>
+<!-- two&#45;&gt;three -->
+<g id="edge1" class="edge">
+<title>two-&gt;three</title>
+<path fill="none" stroke="#ffa500" stroke-width="3" d="M107.8723,-35.9006C112.9097,-46.142 118.5216,-59.42 121.0891,-72 124.2886,-87.6768 124.2886,-92.3232 121.0891,-108 119.2437,-117.0419 115.8256,-126.4443 112.1784,-134.8207"></path>
+<polygon fill="#ffa500" stroke="#ffa500" stroke-width="3" points="108.9072,-133.5552 107.8723,-144.0994 115.2568,-136.502 108.9072,-133.5552"></polygon>
+</g>
+</g>
+</svg>

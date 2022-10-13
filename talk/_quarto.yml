@@ -1,0 +1,27 @@
+project:
+  title: "A/B Testing"
+  type: "website"
+
+
+format:
+  html:
+    code-fold: true
+    html-math-method: katex
+  revealjs:
+    theme: [evelyn.scss]
+    css: evelyn.css
+    logo: 'img/dayton_gearfilled.png'
+    footer: " Created by Evelyn J. Boettcher (2022)"
+    scrollable: true
+    transition: slide
+    transition-speed: fast
+    chalkboard:
+      buttons: true
+
+execute:
+  echo: true
+  output: true
+  error: true
+
+jupyter: python3
+

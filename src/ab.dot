@@ -1,0 +1,80 @@
+digraph g {
+  compound=true
+  graph [fontname="comfortaa,roboto,Arial,sans-serif" fontsize=40 labelloc="t" label="" splines=true overlap=false rankdir = "LR"];
+  node [fontname="comfortaa,roboto,Arial,sans-serif", style=filled, penwidth=2]
+  edge [fontname="comfortaa-bold,eoboto,Arial,sans-serif", ]
+  ratio = auto;
+  subgraph cluster_0 {
+        shape=oval;
+        rankdir = "TB"
+		style=filled;
+		color=lightgrey;
+		fillcolor="grey80:floralwhite";
+		gradientangle=40
+        node [shape=circle, style=filled gradientangle=270];
+		a0 [fillcolor="yellow:green" color="yellow:green" ] ;
+		a1 [fillcolor="yellow:green" color="yellow:green"] ;
+		node [fillcolor="burlywood:cornsilk" color="burlywood:cornsilk"] a2;
+        node [fillcolor="yellow:green" color="yellow:green"] a3;
+		node [fillcolor="burlywood:cornsilk" color="burlywood:cornsilk"] a4;
+        node [fillcolor="burlywood:cornsilk" color="burlywood:cornsilk"] a5;
+
+	}
+  subgraph cluster_A {
+        shape=oval;
+        rankdir = "TB"
+		style=filled;
+		color=red;
+		fillcolor="grey80:floralwhite";
+		gradientangle=40
+        penwidth=5
+        node [shape=circle, style=filled gradientangle=270];
+		A1 [label="a0" fillcolor="yellow:green" color="yellow:green" ] ;
+		A2  [label="a2" fillcolor="burlywood:cornsilk" color="burlywood:cornsilk"];
+		A3 [label="a4" fillcolor="burlywood:cornsilk" color="burlywood:cornsilk"];
+		label = "A";
+	}
+
+  subgraph cluster_B {
+        shape=oval;
+        rankdir = "TB"
+		style=filled;
+		color=blue;
+		fillcolor="grey80:floralwhite";
+		gradientangle=40
+        penwidth=5
+        node [shape=circle, style=filled gradientangle=270];
+        B1 [label="a1" fillcolor="yellow:green" color="yellow:green"] ;
+        B2 [label="a3" fillcolor="yellow:green" color="yellow:green"] ;
+        B3 [label="a5" fillcolor="burlywood:cornsilk" color="burlywood:cornsilk"];
+		label = "B";
+	}
+
+  "AB-Test"[fontsize=34 shape="parallelogram" label="A/B Test", color=grey80,
+           fillcolor="lightyellow" style="filled", penwidth=5 ]
+
+  "stateA" [fontsize=22 fillcolor = "white" shape = "Mrecord" label =<<table border="0" cellborder="0" cellpadding="4" bgcolor="white"><tr><td></td><td bgcolor="red" align="center" colspan="6"><font color="white">Buy</font></td><td></td><td></td></tr><tr><td colspan="6" align="left" port="r1" >Shirts for sale</td></tr><tr><td></td><td></td><td colspan="4" bgcolor="grey" align="right">$29.95  </td></tr></table>> ];
+  "stateB"  [fontsize=22 fillcolor = "white" shape = "Mrecord" label =<<table border="0" cellborder="0" cellpadding="4" bgcolor="white"><tr><td></td><td bgcolor="blue" align="center" colspan="6"><font color="white">Buy</font></td><td></td><td></td></tr><tr><td colspan="6" align="left" port="r1">Shirts for sale</td></tr><tr><td></td><td></td><td colspan="4" bgcolor="grey" align="right">$29.95  </td></tr></table>> ];
+
+  eval [fontsize=25 label="Evaluate", fillcolor=white, shape=box color=chartreuse4, penwidth=6 margin=.3]
+  decide [fontsize=25 label=Decission shape=diamond penwidth=6]
+   {a0 a1 a2 a3 a4 a5} -> "AB-Test"[ltail=cluster_0];
+   "AB-Test" -> A1[lhead=cluster_A, color=red, penwidth=4];
+   "AB-Test" -> B1[lhead=cluster_B, color=blue, penwidth=4];
+   A1 -> stateA[ltail=cluster_A, color=red, penwidth=4]
+   B1  -> stateB[ltail=cluster_B, color=blue, penwidth=4]
+
+   stateA ->eval[penwidth=4]
+   stateB -> eval[penwidth=4]
+   eval -> decide[penwidth=4]
+   node [penwidth=2 fontsize=25, style="", color=invis];
+   edge [style="invis"];
+   Users -> "Design Test" -> "Ranomize Users" -> "Test" -> "Evaluate" -> "Decide if change is needed"
+
+
+
+
+
+
+
+}

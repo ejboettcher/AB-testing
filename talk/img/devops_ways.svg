@@ -1,0 +1,109 @@
+<svg width="670pt" height="251pt" viewBox="0 0 670 251" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 246.8)">
+<title>g</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-246.8 666,-246.8 666,4 -4,4"></polygon>
+<text text-anchor="middle" x="331" y="-216.3" font-family="comfortaa,Roboto" font-size="25.00" fill="#000000">Three Ways</text>
+<g id="clust1" class="cluster">
+<title>cluster_0</title>
+<defs>
+<linearGradient id="l_0" gradientUnits="userSpaceOnUse" x1="20.6336" y1="-41.7208" x2="103.3664" y2="-163.0792">
+<stop offset="0" style="stop-color:#e5e5e5;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:#fffaf0;stop-opacity:1.;"></stop>
+</linearGradient>
+</defs>
+<polygon fill="url(#l_0)" stroke="transparent" points="8,-8 8,-196.8 116,-196.8 116,-8 8,-8"></polygon>
+<text text-anchor="middle" x="62" y="-174.8" font-family="comfortaa,Roboto" font-size="20.00" fill="#0000ff">Principles</text>
+<text text-anchor="middle" x="62" y="-150.8" font-family="comfortaa,Roboto" font-size="20.00" fill="#0000ff"> of Flow</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_1</title>
+<defs>
+<linearGradient id="l_1" gradientUnits="userSpaceOnUse" x1="149.2672" y1="-40.935" x2="314.7328" y2="-159.465">
+<stop offset="0" style="stop-color:#f0f0f0;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:#fffaf0;stop-opacity:1.;"></stop>
+</linearGradient>
+</defs>
+<polygon fill="url(#l_1)" stroke="transparent" points="124,-8 124,-192.4 340,-192.4 340,-8 124,-8"></polygon>
+<text text-anchor="middle" x="232" y="-170.4" font-family="comfortaa,Roboto" font-size="20.00" fill="#0000ff">Principles</text>
+<text text-anchor="middle" x="232" y="-146.4" font-family="comfortaa,Roboto" font-size="20.00" fill="#0000ff"> of Feedback</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_2</title>
+<defs>
+<linearGradient id="l_2" gradientUnits="userSpaceOnUse" x1="383.7952" y1="-40.935" x2="618.2048" y2="-159.465">
+<stop offset="0" style="stop-color:#f0f0f0;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:#fffaf0;stop-opacity:1.;"></stop>
+</linearGradient>
+</defs>
+<polygon fill="url(#l_2)" stroke="transparent" points="348,-8 348,-192.4 654,-192.4 654,-8 348,-8"></polygon>
+<text text-anchor="middle" x="501" y="-170.4" font-family="comfortaa,Roboto" font-size="20.00" fill="#0000ff">Principles</text>
+<text text-anchor="middle" x="501" y="-146.4" font-family="comfortaa,Roboto" font-size="20.00" fill="#0000ff"> of Coninious Learning</text>
+</g>
+<!-- one -->
+<g id="node1" class="node">
+<title>one</title>
+<polygon fill="#d3d3d3" stroke="#000000" stroke-width="2" points="108.1411,-132.7004 15.8589,-132.7004 15.8589,-88.0996 108.1411,-88.0996 108.1411,-132.7004"></polygon>
+<text text-anchor="middle" x="62" y="-106.2" font-family="comfortaa,Roboto,Arial,sans-serif" font-size="14.00" fill="#000000">Make work</text>
+</g>
+<!-- a -->
+<g id="node2" class="node">
+<title>a</title>
+<defs>
+<linearGradient id="l_3" gradientUnits="userSpaceOnUse" x1="23.1406" y1="-34" x2="100.8594" y2="-34">
+<stop offset="0" style="stop-color:#7fff00;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:#caff70;stop-opacity:1.;"></stop>
+</linearGradient>
+</defs>
+<ellipse fill="url(#l_3)" stroke="#000000" stroke-width="2" cx="62" cy="-34" rx="38.8594" ry="18"></ellipse>
+<text text-anchor="middle" x="62" y="-29.8" font-family="comfortaa,Roboto,Arial,sans-serif" font-size="14.00" fill="#000000">Visible</text>
+</g>
+<!-- one&#45;&gt;a -->
+<g id="edge1" class="edge">
+<title>one-&gt;a</title>
+<path fill="none" stroke="#000000" stroke-width="3" d="M62,-87.8907C62,-79.9678 62,-70.9551 62,-62.5979"></path>
+<polygon fill="#000000" stroke="#000000" stroke-width="3" points="65.5001,-62.4943 62,-52.4943 58.5001,-62.4943 65.5001,-62.4943"></polygon>
+</g>
+<!-- two -->
+<g id="node3" class="node">
+<title>two</title>
+<ellipse fill="none" stroke="#006400" stroke-width="2" cx="223" cy="-110.4" rx="90.8685" ry="18"></ellipse>
+<text text-anchor="middle" x="223" y="-106.2" font-family="comfortaa,Roboto,Arial,sans-serif" font-size="14.00" fill="#000000">Fast feedback cycles</text>
+</g>
+<!-- two&#45;&gt;two -->
+<g id="edge3" class="edge">
+<title>two-&gt;two</title>
+<path fill="none" stroke="#000000" stroke-width="3" d="M280.7222,-124.336C307.9885,-125.9555 331.9342,-121.3102 331.9342,-110.4 331.9342,-100.8536 313.6008,-96.1037 290.7511,-96.1503"></path>
+<polygon fill="#000000" stroke="#000000" stroke-width="3" points="290.6079,-92.653 280.7222,-96.464 290.8267,-99.6496 290.6079,-92.653"></polygon>
+</g>
+<!-- b -->
+<g id="node4" class="node">
+<title>b</title>
+<ellipse fill="none" stroke="transparent" stroke-width="2" cx="229" cy="-34" rx="97.2333" ry="18"></ellipse>
+<text text-anchor="middle" x="229" y="-29.8" font-family="comfortaa,Roboto,Arial,sans-serif" font-size="14.00" fill="#000000">Don't throw over wall</text>
+</g>
+<!-- two&#45;&gt;b -->
+<g id="edge2" class="edge">
+<title>two-&gt;b</title>
+<path fill="none" stroke="#ff0000" stroke-width="3" stroke-dasharray="5,2" d="M224.4219,-92.2943C225.1266,-83.3208 225.9938,-72.2793 226.7831,-62.2282"></path>
+<polygon fill="#ff0000" stroke="#ff0000" stroke-width="3" points="230.2737,-62.4839 227.5675,-52.2405 223.2952,-61.9358 230.2737,-62.4839"></polygon>
+</g>
+<!-- three -->
+<g id="node5" class="node">
+<title>three</title>
+<ellipse fill="transparent" stroke="transparent" stroke-width="2" cx="501" cy="-110.4" rx="112.2567" ry="18"></ellipse>
+<text text-anchor="middle" x="501" y="-106.2" font-family="comfortaa,Roboto,Arial,sans-serif" font-size="14.00" fill="#000000">Create Culture of learning</text>
+</g>
+<!-- c -->
+<g id="node6" class="node">
+<title>c</title>
+<ellipse fill="transparent" stroke="transparent" stroke-width="2" cx="501" cy="-34" rx="144.7019" ry="18"></ellipse>
+<text text-anchor="middle" x="501" y="-29.8" font-family="comfortaa,Roboto,Arial,sans-serif" font-size="14.00" fill="#000000">Create Culture of Experimentation</text>
+</g>
+<!-- three&#45;&gt;c -->
+<g id="edge4" class="edge">
+<title>three-&gt;c</title>
+<path fill="none" stroke="transparent" stroke-width="3" d="M501,-92.2943C501,-83.4153 501,-72.5115 501,-62.5459"></path>
+<polygon fill="transparent" stroke="transparent" stroke-width="3" points="504.5001,-62.2405 501,-52.2405 497.5001,-62.2406 504.5001,-62.2405"></polygon>
+</g>
+</g>
+</svg>

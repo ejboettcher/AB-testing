@@ -1,0 +1,54 @@
+ digraph g {
+  compound=true
+  graph [fontname="comfortaa,Roboto"  fontsize=25 labelloc="t" label="" splines=true overlap=false rankdir = "TB"];
+  node [fontname="comfortaa,Roboto,Arial,sans-serif", style=filled, penwidth=2]
+  edge [fontname="comfortaa-bold,Roboto,Arial,sans-serif", penwidth=3]
+
+  ratio = auto;
+
+  one [label="Make work" shape=box margin=.2];
+  a [label="Visible", fillcolor="chartreuse:darkolivegreen1", shape="oval"];
+  subgraph cluster_0 {
+
+    label= "Principles\n of Flow"
+    fontcolor="blue" fontsize=20
+    rankdir = "TB"
+    style=filled;
+    color="invis";
+    fillcolor="grey90:floralwhite";
+    gradientangle=40
+    one -> a
+ }
+
+  subgraph cluster_1 {
+  fontcolor="blue" fontsize=20
+    shape=oval;
+    rankdir = "TB"
+    style=filled;
+    color="invis";
+    fillcolor="grey94:floralwhite";
+    gradientangle=40
+    two [label="Fast feedback cycles" style="diamond", color="darkgreen"];
+    b [label="Don't throw over wall",  style="cylinder" color="invis"];
+
+    two ->b[style=dashed color=red] ;
+
+    two -> two
+    label= "Principles\n of Feedback"
+ }
+  subgraph cluster_2 {
+    fontcolor="blue" fontsize=20
+    rankdir = "TB"
+    style=filled;
+    color="invis";
+    fillcolor="grey94:floralwhite";
+    gradientangle=40;
+    three [label="Create Culture of learning" color=invis];
+    c [label="Create Culture of Experimentation",  color="invis"];
+    three->  c[color="invis"]
+    label= "Principles\n of Coninious Learning"
+ }
+
+ label="Three Ways"
+
+ }

@@ -1,0 +1,25 @@
+ digraph g {
+
+  compound=true
+  graph [fontsize=40 labelloc="t" label="" splines=true overlap=false rankdir = "TB"];
+  node [fontname="comfortaa,Roboto,Arial,sans-serif", style=filled, penwidth=2]
+  edge [fontname="comfortaa-bold,Roboto,Arial,sans-serif", penwidth=3]
+  ratio = auto;
+  subgraph cluster_0 {
+        shape=oval;
+        rankdir = "TB"
+		style=filled;
+		color=lightgrey;
+		fillcolor="grey80:floralwhite";
+		gradientangle=40
+        node [shape=circle, style=filled gradientangle=270];
+        m [label="Marketing" shape=oval color=yellow]
+        d [label="Data mining" margin=.2 shape=cylinder fillcolor=darkolivegreen1 color=darkolivegreen4 ]
+        i [label="Implement" shape=diamond color= darkslategray3]
+        m->d
+        d->i[color="invis"]
+        d->m[style=dashed, color="grey40"]
+        m->i
+  }
+
+}

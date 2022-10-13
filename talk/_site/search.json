@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "talk.html#a-b-testing",
+    "href": "talk.html#a-b-testing",
+    "title": "Power of A/B Testing",
+    "section": "A / B Testing",
+    "text": "A / B Testing\nA/B testing is a randomized controlled experiment.\n There are two tests: A and B, in which a single variable adjusted (B Test).   This variation, might affect a user’s behavior. \n\n\nGoal: Increase End User’s Objective\n\nBusiness: Income increases >> Costs of change\nHealth Care: Health increases >> Side effect\n\n\n\nNot explicitly telling users they are in a test\n“User” is loosely used. It could be servers, Say testing speed: Google vs AWS cloud"
+  },
+  {
+    "objectID": "talk.html#gedanken",
+    "href": "talk.html#gedanken",
+    "title": "Power of A/B Testing",
+    "section": "Gedanken:",
+    "text": "Gedanken:\n\n\nTrader Janes has a New Pizza\nSay there is a grocer called Trader Janes and it wants to add a new pizza to its line up.  However, they need to keep the same number of types it sells a constant. Freezer only holds N pizzas.\n They will have to remove one pizza from their lineup to add the new item.   \nTypical Work flow\n\nMarketing asks a Data Miner to rank popularity of pizza.\nThe Data Miner finds the pizza that sells the least.\nStores remove that pizza.\nStores add new pizza.\n\n\n \n\n\nArjun Kartha’s pizza pic"
+  },
+  {
+    "objectID": "talk.html#a-b-testing-limitations",
+    "href": "talk.html#a-b-testing-limitations",
+    "title": "Power of A/B Testing",
+    "section": "A / B Testing Limitations",
+    "text": "A / B Testing Limitations\nA/B Testing is used to clarify a vision, but does not create vision.\n\nFor example, an ophthalmologist quickly gives you a set of two choices; 1 or 2 (2 or 3) that lead to sharpen vision. Their test, like A/B, can not give you vision.\n\nThough without a clarity,  a vision has serious limitation."
+  },
+  {
+    "objectID": "talk.html#ab-testing-and-devops",
+    "href": "talk.html#ab-testing-and-devops",
+    "title": "Power of A/B Testing",
+    "section": "A/B Testing and DevOps",
+    "text": "A/B Testing and DevOps\n\n\n \nHow does A/B testing fit\ninto the DevOps?\n \n\n(from The Pheonix Project (Kim, Behr, and Spafford 2013))\n\n\nThe Three Ways for DevOps\nThe First Way: Principles of Flow\n\nMaking work “visible” by defining a work flow\n\nThe Second Way: Principles of Feedback\n\nHave fast and constant feedback cycles throughout all stages of a development\nDon’t throw it over the wall\n\nThird Way: Principles of Continuous Learning\n\nCreate a culture of continual learning and experimentation"
+  },
+  {
+    "objectID": "talk.html#ab-tests",
+    "href": "talk.html#ab-tests",
+    "title": "Power of A/B Testing",
+    "section": "A/B Tests",
+    "text": "A/B Tests\nThe good, the bad and the ugly\n\n\n\n\n\nRewards\n\nIncreased companies goals:\n\nBusiness: Profits\nHealthcare: Health\nDefence: Situational Awareness\n\n\n\n\n\n\n\nRisks\n\nTest cost time and money\nDon’t know what percent of risk is acceptable\n\nMedical and Defence will have lower threshold of risk\n\nUpset customers\nChange makes things worse\n\n\nMitigation\n\nHave the smallest test possible\n5% False Positive\n20% False Negative\n\nTypical of non life critical changes\n\nMinimize number of samples"
+  },
+  {
+    "objectID": "talk.html#rules-of-thumb-20-5-rule",
+    "href": "talk.html#rules-of-thumb-20-5-rule",
+    "title": "Power of A/B Testing",
+    "section": "Rules of Thumb: 20 / 5 Rule",
+    "text": "Rules of Thumb: 20 / 5 Rule\n\nAssume there is no difference between A and B\n\\[\n\\Delta = 0 \\\\\n\\Delta = B - A\n\\]\n\n\n\n\nFalse positive\n\nA is better but, you implemented B\nincurs an explicit cost\n\n\n\nFalse negative\n\nB is better but, you stuck with A\nincurs an explicit cost\n\n\n\n\n\n\n\n\\(\\alpha\\) == False Positive rate (5%: 1.64)\n\nYou can assume B is better than A\n\n\\(\\beta\\)== False Negative rate (20%: 0.84)\n\nYou can assume A is better than B"
+  },
+  {
+    "objectID": "talk.html#quotes",
+    "href": "talk.html#quotes",
+    "title": "Power of A/B Testing",
+    "section": "Quotes",
+    "text": "Quotes\nKnowledge discovery in databases (KDD) is the process of discovering useful knowledge from a collection of data.\nThe Phoenix Project Quotes Showing 1-30 of 310 “Improving daily work is even more important than doing daily work.” (Kim, Behr, and Spafford 2013)\n“until code is in production, no value is actually being generated, because it’s merely WIP stuck in the system.” (Kim, Behr, and Spafford 2013)\n“every work center is made up of four things: the machine, the man, the method, and the measures.” (Kim, Behr, and Spafford 2013)\n(Kim, Behr, and Spafford 2013) Framework #1: The Phoenix Project/DevOps Handbook’s Three Ways If you’ve read either The Phoenix Project or The DevOps Handbook, you’ve been introduced to The Three Ways framework for DevOps:\nThe First Way: Principles of Flow The Second Way: Principles of Feedback The Third Way: Principles of Continuous Learning The First Way: Principles of Flow The First Way is mostly concerned with accelerating the “flow” of work throughout a process. Gene Kim also refers to the First Way as Systems Thinking in his article The Three Ways: Principles Underpinning DevOps. Whether you’re calling it Flow or Systems Thinking, the principles underpinning the First Way are working toward the same end: viewing the flow of work as one continuous system (unsiloed) that can be continually refined and optimized.\nSome of the key principles of the First Way are:\nMaking work “visible”. Unlike manufacturing processes, which are easily observable on a plant floor, the flow of software through its development lifecycle is not easily seen. Using methods such as Kanban boards can surface the activities going on behind the scenes, by showing the left-to-right movement of a user story through the development phases.\nLimiting work-in-progress (WIP). Keeping work-in-progress to a minimum has also been shown to accelerate work flow, because it minimizes multi-tasking and context-switching.\nReducing batch sizes. “Chunking” work into smaller pieces like a two-week sprint can also help deliver features (albeit smaller ones) and bug fixes to the customer faster. Issues are often caught earlier when those updates and additions are released sooner.\nReducing hand-offs between teams. The risk of “dropping the baton” increases as the hand-offs do. Although hand-offs can’t be completely minimized, the key is to keep the teams in tight communication with one another so that the hand-off itself is almost a non-event rather than a large ordeal with the potential for communication missteps along the way.\nIdentifying and removing constraints and waste. Constraints might be bottlenecks in the process, such as environments, test setup, and overly tight architecture, while waste includes things like manual work, heroics, and context-switching. The Second Way: Principles of Feedback The Second Way works to enable fast and constant feedback cycles throughout all stages of a development cycle.\nSome of the key principles of the Second Way are:\nSwarming and solving problems to build new knowledge. This principle fits into the “fail fast” mentality, so that teams can find issues with an implementation as soon as possible and address them early and often as iterations continue.\nPushing quality closer to source. This principle is at the core of the DevSecOps movement, which is concerned with addressing security concerns during the development cycle, instead of at the end, when rework to remediate is more difficult and costly.\nOptimizing for downstream work centers. This principle works against the “throw it over the wall” mentality, by underscoring that development should be just as invested in their application being deployable, working with operations to bridge that gap (and vice versa). The Third Way: Principles of Continuous Learning The Third Way seeks to create a culture of continual learning and experimentation within the development organization.\nSome of the key principles of the Third Way are:\nEnabling organizational learning and a safety culture. Leaders must help “set the tone” for the organization, making it okay to learn, make mistakes, and try again.\nInstitutionalizing the improvement of daily work. Improving what you do and how you accomplish it should be part of everyone’s daily thinking and call to action.\nTransforming local discoveries to global improvements. Surfacing and sharing improvements at all levels will help enable a “bubble up” culture of continuous improvement.\nInjecting resilience patterns into daily work. Some examples might include rehearsing failures, and working toward improving key metrics for deployment.\nLeaders enforcing a learning culture. Organization-wide learning is unlikely to take hold and become pervasive unless it is sanctioned and exemplified by its leaders. So being intentional about communicating the value of learning and problem-solving is crucial to building that culture.\nReferences\n\n\nKim, Gene, Kevin Behr, and George Spafford. 2013. The Phoenix Project: A Novel about IT, DevOps, and Helping Your Business Win. 1st ed. IT Revolution Press.\n\n\nPierce, Rod. n.d. “Standard Normal Distribution Table.” http://www.mathsisfun.com/data/standard-normal-distribution-table.html.\n\n\nSweet, D. 2022. Experimentation for Engineers: From a/b Testing to Bayesian Optimization. Manning. https://books.google.com/books?id=9xONzgEACAAJ.\n\n\n\n\n\nCreated by Evelyn J. Boettcher (2022)"
+  }
+]

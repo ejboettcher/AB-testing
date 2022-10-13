@@ -1,0 +1,19 @@
+ digraph g {
+  compound=true
+  graph [fontname="comfortaa,Roboto"fontcolor=blue fontsize=22 labelloc="t" label="" splines=true overlap=false rankdir = "TB"];
+  node [fontname="comfortaa,Roboto,Arial,sans-serif", style=filled, penwidth=2]
+  edge [fontname="comfortaa-bold,Roboto,Arial,sans-serif", penwidth=3]
+
+  ratio = auto;
+  three [label="Is there a better way" color=invis];
+      c [label="Experiment",  color="invis"];
+  two [label="Fast feedback cycles" style="diamond", color="darkgreen"];
+
+ label="A/B Testing and \n the Three Ways"
+
+
+
+ two->three[color=orange]
+ three->c[color=orange]
+ c->two[color=orange]
+ }
