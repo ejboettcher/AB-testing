@@ -46,7 +46,7 @@
     three [label="Create Culture of learning" color=invis];
     c [label="Create Culture of Experimentation",  color="invis"];
     three->  c[color="invis"]
-    label= "Principles\n of Coninious Learning"
+    label= "Principles\n of Continuous Learning"
  }
 
  label="Three Ways"

@@ -358,7 +358,7 @@
 <p><br> There are two tests: A and B, in which a single variable adjusted (B Test). <br> <br> This variation, <strong>might</strong> affect a user’s behavior. <br></p>
 
 <img data-src="./img/ab.svg" class="margin-caption r-stretch"><p><br></p>
-<h3 id="goal-increase-end-users-objective">Goal: Increase End User’s Objective</h3>
+<h4 id="goal-increase-end-users-objective">Goal: Increase End User’s Objective</h4>
 <ul>
 <li><strong>Business:</strong> Income increases &gt;&gt; Costs of change</li>
 <li><strong>Health Care:</strong> Health increases &gt;&gt; Side effect</li>
@@ -384,15 +384,17 @@
 
 <h3 id="weekly-planner-choices">Weekly Planner Choices</h3>
 <div class="columns">
-<div class="column" style="width:15%;">
+<div class="column" style="width:10%;">
 
-</div><div class="column" style="width:35%;">
+</div><div class="column" style="width:5%;">
 <h4 id="a">A</h4>
+</div><div class="column" style="width:30%;">
 <p><img data-src="img/CIRCA_JOTLET_WEEKLY.webp" class="margin-caption" width="200"></p>
-</div><div class="column">
+</div><div class="column" style="width:5%;">
 <h4 id="b">B</h4>
+</div><div class="column">
 <p><img data-src="img/stamp-weekly.jpg" class="margin-caption" width="200"></p>
-</div><div class="column" style="width:15%;">
+</div><div class="column" style="width:10%;">
 
 </div>
 </div>
@@ -412,17 +414,29 @@
 <section class="slide level2">
 
 <h3 id="life-is-complicated">Life is complicated</h3>
-<p>Subject matter experts (SME) from Microsoft, Netflixs etc, find when they implement changes that only a small fraction of their ideas have the planned outcome <span class="citation" data-cites="sweet">(<a href="#/quotes" role="doc-biblioref" onclick="">Sweet 2022</a>)</span>.</p>
-<p><br> This is because domain knowledge only gets you so far. <br></p>
+<p>Domain knowledge only gets you so far! <br> Subject matter experts (SME) from Microsoft, Netflixs etc, find when they implement changes that only a small fraction of their ideas have the planned outcome <span class="citation" data-cites="sweet">(<a href="#/quotes" role="doc-biblioref" onclick="">Sweet 2022</a>)</span>.</p>
+<p><br></p>
+<p>Again, domain knowledge only gets you so far.</p>
+<p><br></p>
 <p>Even though we are isolating a single variable, that variable interacts with a million other variables. <br> You simply can not model everything or know everything.</p>
 <div class="columns">
-<div class="column" style="width:70%;">
+<div class="column" style="width:60%;">
 <p><img data-src="./img/10_lightbulb.webp" class="margin-caption" style="width:90.0%"></p>
-</div><div class="column" style="width:30%;">
-<p><br> <br> <br></p>
+</div><div class="column" style="width:39%;">
+<p><br></p>
 <div>
 <ul>
-<li class="fragment"><h4 id="implemented-changes-can-hurt-business">Implemented changes can hurt business</h4></li>
+<li class="fragment"><h4 id="any-change-can-hurt-a-business.">Any change can hurt a business.</h4>
+<ul>
+<li class="fragment">Event tested changes
+<ul>
+<li class="fragment">Though less likely!</li>
+</ul></li>
+</ul></li>
+<li class="fragment">Change can help a business
+<ul>
+<li class="fragment">“If we are not growing, we are die-ing” (old Program Manager)</li>
+</ul></li>
 </ul>
 </div>
 </div>
@@ -712,6 +726,76 @@ N &gt; 2.48 \left( \frac{\sigma_\Delta}{\Delta} \right)^2
 </div>
 </div>
 </section>
+<section id="f-potential" class="slide level2">
+<h2>F potential</h2>
+<p>If we implement B, how F–ed up will be make the users?</p>
+<p>Group mindset has been around since the 1950’s. Current research shows that our minds physically change when we work together <span class="citation" data-cites="change-minds">(<a href="#/quotes" role="doc-biblioref" onclick="">Hughes, n.d.</a>)</span></p>
+<p>So it is scary to read these A/B Testing done on their users without consent and at this scale. These are some of the ones we know about.</p>
+<ul>
+<li>Facebook: Testing their algorithm to see if it really does radicalize people<span class="citation" data-cites="facebook-radical">(<a href="#/quotes" role="doc-biblioref" onclick="">Zadrozny, n.d.</a>)</span></li>
+<li>Linked-In: 20 million users to find out how links affect jobs <span class="citation" data-cites="linkedin-jobs">(<a href="#/quotes" role="doc-biblioref" onclick=""><span>“LinkedIn Ran Social Experiments on 20 Million Users over Five Years,”</span> n.d.</a>)</span></li>
+<li>Facebook: 700,000 users to see if they can make them sad <span class="citation" data-cites="facebook-sad">(<a href="#/quotes" role="doc-biblioref" onclick="">Hern, n.d.</a>)</span></li>
+</ul>
+<p>Health Care * Drug Companies: OxyContin <span class="citation" data-cites="oxycontin">(<a href="#/quotes" role="doc-biblioref" onclick="">Detrano 2022</a>)</span> * 1% addiction rate advertised * 10-30% addiction rate in real life</p>
+</section>
+<section class="slide level2">
+
+<h3 id="remendy">Remendy</h3>
+<h4 id="good-news">Good news</h4>
+<p>There are already strong standard for testing on human subjects. There is the IRB (Internal review board) proprocess.</p>
+<p>With required and continuous training and certification: CiTI training.</p>
+<h4 id="bad-news">Bad news</h4>
+<p>Only required for companies receiving federial government funding: Universities, Air Force, Army etc.</p>
+<p>Not required for companies that work with schools (state and local funding) and social media companies.</p>
+<h3 id="f-potential-1">F potential</h3>
+<p>In light of this, I propose researchers use the F potential</p>
+</section>
+<section class="slide level2">
+
+<h3 id="f_upped-potential"><span class="math inline">\(F_{upped}\)</span> Potential</h3>
+<p><span class="math display">\[
+F_{upped} =  \begin{cases}
+       \text{1,} &amp;\quad\text{if seriously harmed}\\
+       \text{0.5,} &amp;\quad\text{if slightly harmed} \\
+       \text{0,} &amp;\quad\text{if not measurable}\\
+       \text{-0.5,} &amp;\quad\text{becomes better} \\
+       \text{-1,} &amp;\quad\text{becomes a lot better} \\
+     \end{cases}
+\]</span></p>
+<p>If <span class="math inline">\(F_{upped}\)</span> &gt;0, test should be a no go.</p>
+<p>If <span class="math inline">\(F_{upped}\)</span> &lt; 0, <span class="math inline">\(\Delta\)</span> should be halved.</p>
+<ul>
+<li>e.g.&nbsp;the amount of gain the company needs to make from change, should be halved.</li>
+</ul>
+</section>
+<section id="unseen-bias" class="slide level2">
+<h2>Unseen Bias</h2>
+<p>A/B Testing can help with unseen bias</p>
+<hr>
+<p>I know of three small business that where started by young women in the Dayton area who did<br>
+not know their logo could affect people like me (over 40).</p>
+<p><br> They literally could see their logo,</p>
+<p><br></p>
+<h4 id="however-1">However</h4>
+<p>Their logo was not readable to me at a distance!</p>
+</section>
+<section class="slide level2">
+
+<h3 id="contrast-threshold-function-ctf-of-the-eye">Contrast threshold function (CTF) of the Eye</h3>
+
+<img data-src="./img/Contrast_freq.webp" class="margin-caption r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="how-logos-change-because-of-ctf">How logos change because of CTF</h3>
+<h4 id="starbucks-logo-evolution">Starbucks Logo Evolution</h4>
+
+<img data-src="./img/Starbucks-Logo-history.jpg" class="margin-caption r-stretch"><p><span class="citation" data-cites="starbucks">(<a href="#/quotes" role="doc-biblioref" onclick=""><strong>starbucks?</strong></a>)</span></p>
+<h3 id="risks-for-this-change">Risks for this change</h3>
+<ul>
+<li>Attract more old people, alienate young</li>
+<li>Loyal customers might not like change</li>
+</ul>
+</section>
 <section id="quotes" class="slide level2 smaller scrollable">
 <h2>Quotes</h2>
 <p>Knowledge discovery in databases (KDD) is the process of discovering useful knowledge from a collection of data.</p>
@@ -738,14 +822,29 @@ N &gt; 2.48 \left( \frac{\sigma_\Delta}{\Delta} \right)^2
 <p>Leaders enforcing a learning culture. Organization-wide learning is unlikely to take hold and become pervasive unless it is sanctioned and exemplified by its leaders. So being intentional about communicating the value of learning and problem-solving is crucial to building that culture.</p>
 <h3 id="references">References</h3>
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-oxycontin" class="csl-entry" role="doc-biblioentry">
+Detrano, Joseph. 2022. <span>“The Four-Sentence Letter Behind the Rise of Oxycontin.”</span> 2022. <a href="https://alcoholstudies.rutgers.edu/the-four-sentence-letter-behind-the-rise-of-oxycontin/#:~:text=It%20highlights%20the%20exceptional%20strength,or%20wary%20of%20negative%20outcomes.">https://alcoholstudies.rutgers.edu/the-four-sentence-letter-behind-the-rise-of-oxycontin/#:~:text=It%20highlights%20the%20exceptional%20strength,or%20wary%20of%20negative%20outcomes.</a>
+</div>
+<div id="ref-facebook-sad" class="csl-entry" role="doc-biblioentry">
+Hern, Alex. n.d. <span>“Facebook Deliberately Made People Sad.”</span> <a href="https://www.theguardian.com/commentisfree/2014/jun/30/facebook-sad-manipulating-emotions-socially-responsible-company">https://www.theguardian.com/commentisfree/2014/jun/30/facebook-sad-manipulating-emotions-socially-responsible-company</a>.
+</div>
+<div id="ref-change-minds" class="csl-entry" role="doc-biblioentry">
+Hughes, Virginia. n.d. <span>“How to Change Minds? A Study Makes the Case for Talking It Out.”</span> <a href="https://www.nytimes.com/2022/09/16/science/group-consensus-persuasion-brain-alignment.html">https://www.nytimes.com/2022/09/16/science/group-consensus-persuasion-brain-alignment.html</a>.
+</div>
 <div id="ref-pheonix" class="csl-entry" role="doc-biblioentry">
 Kim, Gene, Kevin Behr, and George Spafford. 2013. <em>The Phoenix Project: A Novel about IT, DevOps, and Helping Your Business Win</em>. 1st ed. IT Revolution Press.
+</div>
+<div id="ref-linkedin-jobs" class="csl-entry" role="doc-biblioentry">
+<span>“LinkedIn Ran Social Experiments on 20 Million Users over Five Years.”</span> n.d. <a href="https://www.nytimes.com/2022/09/24/business/linkedin-social-experiments.html">https://www.nytimes.com/2022/09/24/business/linkedin-social-experiments.html</a>.
 </div>
 <div id="ref-norm-dist" class="csl-entry" role="doc-biblioentry">
 Pierce, Rod. n.d. <span>“Standard Normal Distribution Table.”</span> <a href="http://www.mathsisfun.com/data/standard-normal-distribution-table.html">http://www.mathsisfun.com/data/standard-normal-distribution-table.html</a>.
 </div>
 <div id="ref-sweet" class="csl-entry" role="doc-biblioentry">
 Sweet, D. 2022. <em>Experimentation for Engineers: From a/b Testing to Bayesian Optimization</em>. Manning. <a href="https://books.google.com/books?id=9xONzgEACAAJ">https://books.google.com/books?id=9xONzgEACAAJ</a>.
+</div>
+<div id="ref-facebook-radical" class="csl-entry" role="doc-biblioentry">
+Zadrozny, Brandy. n.d. <span>“<span>‘Carol’s Journey’</span>: What Facebook Knew about How It Radicalized Users.”</span> <a href="https://www.nbcnews.com/tech/tech-news/facebook-knew-radicalized-users-rcna3581">https://www.nbcnews.com/tech/tech-news/facebook-knew-radicalized-users-rcna3581</a>.
 </div>
 </div>
 

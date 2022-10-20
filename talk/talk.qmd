@@ -24,15 +24,15 @@ This variation, **might** affect a user's behavior.
 
 <br>
 
-### Goal: Increase End User's Objective
+#### Goal: Increase End User's Objective
 
 * **Business:** Income increases >> Costs of change
 * **Health Care:**  Health increases >> Side effect
 
 :::{.notes}
+
 * Not explicitly telling users they are in a test
 * "User" is loosely used.  It could be servers, Say testing speed: Google vs AWS cloud
-
 :::
 
 ---
@@ -40,24 +40,29 @@ This variation, **might** affect a user's behavior.
 ### Weekly Planner Choices
 
 ::::{.columns}
-:::{.column width="15%"}
+:::{.column width="10%"}
 :::
-:::{.column width="35%"}
-
-
+:::{.column width="5%"}
 #### A
+:::
+:::{.column width="30%"}
 
 ![](img/CIRCA_JOTLET_WEEKLY.webp){width=200}
 
 :::
+
+
+:::{.column width="5%"}
+#### B
+:::
+
 :::{.column}
 
-#### B
 
 ![](img/stamp-weekly.jpg){width=200}
 
 :::
-:::{.column width="15%"}
+:::{.column width="10%"}
 :::
 ::::
 
@@ -78,11 +83,15 @@ This variation, **might** affect a user's behavior.
 
 ### Life is complicated
 
+Domain knowledge only gets you so far!
+<br>
 Subject matter experts (SME) from Microsoft, Netflixs etc, find when they implement changes 
 that only a small fraction of their ideas have the planned outcome [@sweet].
 
 <br>
-This is because domain knowledge only gets you so far.
+
+Again, domain knowledge only gets you so far.
+
 <br>
 
 Even though we are isolating a single variable, 
@@ -91,20 +100,23 @@ that variable interacts with a million other variables.
 You simply can not model everything or know everything.
 
 ::::{.columns}
-:::{.column width=70%}
+:::{.column width=60%}
 
 ![](./img/10_lightbulb.webp){width=90%}
 
 :::
-::: {.column width=30%}
+::: {.column width=39%}
 
 <br>
-<br>
-<br>
+
 
 ::: {.incremental}
 
-- #### Implemented changes can hurt business
+- #### Any change can hurt a business.
+  - Event tested changes
+    - Though less likely!
+- Change can help a business
+  - "If we are not growing, we are die-ing" (old Program Manager)
 
 :::
 :::
@@ -548,7 +560,119 @@ Graph from [@norm-dist]
 
 ---
 
+## F potential
 
+If we implement B, how F--ed up will that make the users?
+<br>
+
+### Social Sites
+Group mindset has been around since the 1950's.
+Current research shows that our minds physically change when we work together [@change-minds].
+
+So it is scary to read A/B Testing being done on users without consent, knowledge and at this scale.
+These are some of the ones we know about.
+
+* Facebook: Testing their algorithm to see if it really does radicalize people[@facebook-radical]
+* Linked-In: 20 million users to find out how links affect jobs [@linkedin-jobs]
+* Facebook: 700,000 users to see if they can make them sad [@facebook-sad]
+
+### Health Care
+
+* Drug Companies: OxyContin [@oxycontin]
+  * 1% addiction rate advertised
+  * 10-30% addiction rate in real life
+
+---
+
+### Remendy
+
+#### Good news
+
+There are already strong standard for testing on human subjects.  There is the IRB (Internal review board) proprocess.
+
+With required and continuous training and certification: CiTI training.
+
+<br>
+<br>
+
+#### Bad news
+
+Only required for companies receiving federial government funding: Universities, Air Force, Army etc.
+
+Not required for companies that work with schools (state and local funding) and social media companies.
+
+<br>
+
+### F potential
+
+In light of this, I propose researchers use the F potential
+
+---
+
+### $F_{upped}$  Potential
+
+$$
+F_{upped} =  \begin{cases}
+       \text{1,} &\quad\text{if seriously harmed}\\
+       \text{0.5,} &\quad\text{if slightly harmed} \\
+       \text{0,} &\quad\text{if not measurable}\\
+       \text{-0.5,} &\quad\text{becomes better} \\
+       \text{-1,} &\quad\text{becomes a lot better} \\
+     \end{cases}
+$$
+
+If $F_{upped}$ >0, test should be a no go.
+
+If $F_{upped}$ < 0, $\Delta$ should be halved. 
+
+* e.g. the amount of gain the company needs to make from change, should be halved.
+
+---
+
+## Unseen Bias
+
+A/B Testing can help with unseen bias
+
+<hr>
+
+I know of three small business that where started by young women in the Dayton area who did  
+not know their logo could affect people like me (over 40).
+
+<br>
+They literally could  see their logo, 
+
+<br>
+
+#### However
+Their logo was not readable to me at a distance!
+
+---
+
+### Contrast threshold function (CTF) of the Eye
+
+
+![](./img/Contrast_freq.webp)
+
+---
+
+### How logos change because of CTF
+
+#### Starbucks Logo Evolution
+
+
+![](./img/Starbucks-Logo-history.jpg)
+
+[@starbucks]
+
+### Risks for this change
+
+- Attract more old people, alienate young
+- Loyal customers might not like change
+
+
+
+
+---
 ## Quotes
 
 Knowledge discovery in databases (KDD) is the process of discovering useful knowledge from a collection of data.
