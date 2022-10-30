@@ -1,5 +1,4 @@
 ---
-
 title: "Power of A/B Testing"
 subtitle: "Beyond user feedback"
 bibliography: references.bib

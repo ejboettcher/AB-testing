@@ -1,0 +1,59 @@
+<svg width="190pt" height="246pt" viewBox="0 0 190 246" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 241.6)">
+<title>g</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-241.6 186,-241.6 186,4 -4,4"></polygon>
+<g id="clust1" class="cluster">
+<title>cluster_0</title>
+<defs>
+<linearGradient id="l_0" gradientUnits="userSpaceOnUse" x1="27.4183" y1="-47.5791" x2="154.5817" y2="-190.0209">
+<stop offset="0" style="stop-color:#cccccc;stop-opacity:1.;"></stop>
+<stop offset="1" style="stop-color:#fffaf0;stop-opacity:1.;"></stop>
+</linearGradient>
+</defs>
+<polygon fill="url(#l_0)" stroke="#d3d3d3" points="8,-8 8,-229.6 174,-229.6 174,-8 8,-8"></polygon>
+</g>
+<!-- m -->
+<g id="node1" class="node">
+<title>m</title>
+<ellipse fill="#ffff00" stroke="#ffff00" stroke-width="2" cx="79" cy="-203.6" rx="51.0242" ry="18"></ellipse>
+<text text-anchor="middle" x="79" y="-199.4" font-family="comfortaa,Roboto,Arial,sans-serif" font-size="14.00" fill="#000000">Marketing</text>
+</g>
+<!-- d -->
+<g id="node2" class="node">
+<title>d</title>
+<path fill="#caff70" stroke="#6e8b3d" stroke-width="2" d="M127.599,-143.8374C127.599,-146.9075 105.8162,-149.4013 79,-149.4013 52.1838,-149.4013 30.401,-146.9075 30.401,-143.8374 30.401,-143.8374 30.401,-93.7626 30.401,-93.7626 30.401,-90.6925 52.1838,-88.1987 79,-88.1987 105.8162,-88.1987 127.599,-90.6925 127.599,-93.7626 127.599,-93.7626 127.599,-143.8374 127.599,-143.8374"></path>
+<path fill="none" stroke="#6e8b3d" stroke-width="2" d="M127.599,-143.8374C127.599,-140.7674 105.8162,-138.2735 79,-138.2735 52.1838,-138.2735 30.401,-140.7674 30.401,-143.8374"></path>
+<text text-anchor="middle" x="79" y="-114.6" font-family="comfortaa,Roboto,Arial,sans-serif" font-size="14.00" fill="#000000">Data mining</text>
+</g>
+<!-- m&#45;&gt;d -->
+<g id="edge1" class="edge">
+<title>m-&gt;d</title>
+<path fill="none" stroke="#000000" stroke-width="3" d="M73.364,-185.6161C72.576,-177.9862 72.2061,-168.756 72.2541,-159.6236"></path>
+<polygon fill="#000000" stroke="#000000" stroke-width="3" points="75.7573,-159.5219 72.4861,-149.4447 68.7591,-159.3624 75.7573,-159.5219"></polygon>
+</g>
+<!-- i -->
+<g id="node3" class="node">
+<title>i</title>
+<polygon fill="#79cdcd" stroke="#79cdcd" stroke-width="2" points="91,-52 16.4511,-34 91,-16 165.5489,-34 91,-52"></polygon>
+<text text-anchor="middle" x="91" y="-29.8" font-family="comfortaa,Roboto,Arial,sans-serif" font-size="14.00" fill="#000000">Implement</text>
+</g>
+<!-- m&#45;&gt;i -->
+<g id="edge4" class="edge">
+<title>m-&gt;i</title>
+<path fill="none" stroke="#000000" stroke-width="3" d="M103.9281,-187.8112C116.3705,-178.4006 130.1911,-165.2423 137,-149.6 147.9268,-124.4973 146.4593,-113.6917 137,-88 132.4789,-75.7208 123.7869,-64.3323 115.1649,-55.2105"></path>
+<polygon fill="#000000" stroke="#000000" stroke-width="3" points="117.5888,-52.6849 108.0319,-48.1114 112.6508,-57.6465 117.5888,-52.6849"></polygon>
+</g>
+<!-- d&#45;&gt;m -->
+<g id="edge3" class="edge">
+<title>d-&gt;m</title>
+<path fill="none" stroke="#666666" stroke-width="3" stroke-dasharray="5,2" d="M85.5139,-149.4447C85.865,-157.9787 85.8245,-167.2026 85.3925,-175.5776"></path>
+<polygon fill="#666666" stroke="#666666" stroke-width="3" points="81.8975,-175.3813 84.636,-185.6161 88.8777,-175.9074 81.8975,-175.3813"></polygon>
+</g>
+<!-- d&#45;&gt;i -->
+<g id="edge2" class="edge">
+<title>d-&gt;i</title>
+<path fill="none" stroke="transparent" stroke-width="3" d="M83.3323,-88.1853C84.5596,-79.5124 85.888,-70.1249 87.0888,-61.6388"></path>
+<polygon fill="transparent" stroke="transparent" stroke-width="3" points="90.5888,-61.8853 88.5245,-51.4935 83.6578,-60.9044 90.5888,-61.8853"></polygon>
+</g>
+</g>
+</svg>
