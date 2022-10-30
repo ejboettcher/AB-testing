@@ -696,8 +696,12 @@ Luckily, A/B Testing can help with both unseen and seen bias.
 I know of three small business that where started by **young** women 
 in the Dayton area. 
 
-Their original logo design used beautifully detailed font.
 <br>
+
+Their original logo design used beautifully detailed font.
+
+<br>
+
 Unfortunately, this detailed font would make it difficult for people like me (over 40) to read it.
 
 <br>
@@ -712,11 +716,12 @@ They literally could see their logo.
 Their logo was not readable to me when I drove by!
 
 <br>
-
-### Unseen Bias
-
-This is an unseen bias.
+<hr>
 <br>
+
+
+#### This is an unseen bias.
+
 These women (All of whom where lovely and kind) 
 did not know that they made a 
 logo could not be read by me.
@@ -796,11 +801,11 @@ Starbucks Logo has evolved to reduce high spatial information.
 
 <br>
 
-Most consonants spoken show in the 400 to 4500Hz.
+Most consonants spoken are in the 400 to 4500Hz.
 
 <br>
 
-With Women having most of the consonants showing up in the higher frequency's.
+With Women having most of their consonants sounds showing up in the higher frequency's.
 
 <br>
 **Green Bar** shows the cutoff for the _voice spectrum_
