@@ -1,6 +1,7 @@
 project:
   title: "AB Testing"
   type: website
+  output-dir: ../docs
 
 format:
   html:
