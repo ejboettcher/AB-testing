@@ -1,4 +1,5 @@
 ---
+
 title: "Power of A/B Testing"
 subtitle: "Beyond user feedback"
 bibliography: references.bib
@@ -7,11 +8,12 @@ format:
     revealjs:
         incremental: false
 fig-cap-location: margin
+date: Nov 16th, 2022
 ---
 
 ## A / B Testing 
 
-A/B testing is a **randomized** controlled experiment. 
+A/B testing is a **randomized** controlled experiment done in production.
 
 <br>
 There are two tests: A and B, in which a single variable adjusted (B Test).
@@ -115,7 +117,7 @@ You simply can not model everything or know everything.
 - #### Any change can hurt a business.
   - Event tested changes
     - Though less likely!
-- Change can help a business
+- #### Change can help a business
   - "If we are not growing, we are die-ing" (old Program Manager)
 
 :::
@@ -282,7 +284,7 @@ Feedback will be the results of the A/B Testing.
 <br>
 
 #### However
-##### Experimentation happens in operations!
+##### Experimentation happens in production!
 
 :::
 :::{.column width=35%}
@@ -307,7 +309,7 @@ Feedback will be the results of the A/B Testing.
 
 #### Rewards
 
-- Increased companies goals:
+- Increase companies goals: (make more successful):
   - Business: Profits
   - Healthcare: Health
   - Defence: Situational Awareness
@@ -326,7 +328,7 @@ Feedback will be the results of the A/B Testing.
 - Don't know what percent of risk is acceptable
   - Medical and Defence will have lower threshold of risk
 - Upset customers
-- Change makes things worse
+- Change can makes things worse
 
 
 :::
@@ -347,10 +349,17 @@ Feedback will be the results of the A/B Testing.
 
 ---
 
+
+
+## Reducing Costs
+### Minimal Viable Product
+
+Need to create the smallest, fastest A/B Test that has statically meaningful numbers.
+
 <br>
 <br> 
 
-### How do you minimize the number of samples?
+### How do you minimize the number of samples (N)?
 
 <br>
 
@@ -380,22 +389,34 @@ $$
   - It cost money to make a change
   - Increase to bottom line needs to be significant, to accept risk
     -  _Example_: Trader Janes Pizza needs sales to increase by 3%
-- $\sigma_\Delta$: estimated by business logs
+- $\sigma_\Delta$: estimated by business historical data
   - $\sigma_\Delta$ = $~\sqrt{2 \sigma_{log}^2}$
     - $\sigma_{log}$: How much does sales fluctuate 
 
 ---
 
-### Important to note
+### Important
 
 <br>
 
-#### Unless there is a clear, measurable advantage, no change should occur.
+- #### Unless there is a clear, measurable advantage, no change should occur.
 
 <br>
 
-#### There is no guarantee that change will be effective.
+- #### There is no guarantee that change will be effective.
     
+<br>
+<hr>
+<br>
+<br>
+
+#### Bias and Harm
+
+In addition, our testing and product should do **no** harm.
+
+<br>
+
+More on this later
 
 ---
 
@@ -560,9 +581,28 @@ Graph from [@norm-dist]
 
 ---
 
-## F potential
+Yeah, we have our minimal viable test.
+
+<br>
+
+
+But we are not done yet.  
+
+<br>
+
+One more thing to worry about
+
+<br>
+
+
+### Can this harm our customers?
+
+---
+
+## Do no Harm: F potential
 
 If we implement B, how F--ed up will that make the users?
+
 <br>
 
 ### Social Sites
@@ -572,32 +612,37 @@ Current research shows that our minds physically change when we work together [@
 So it is scary to read A/B Testing being done on users without consent, knowledge and at this scale.
 These are some of the ones we know about.
 
-* Facebook: Testing their algorithm to see if it really does radicalize people[@facebook-radical]
-* Linked-In: 20 million users to find out how links affect jobs [@linkedin-jobs]
+* Facebook: Tested their algorithm to see if it really does radicalize people [@facebook-radical]
+* Linked-In: Tested on 20 million users to find out how links affect jobs [@linkedin-jobs]
 * Facebook: 700,000 users to see if they can make them sad [@facebook-sad]
 
 ### Health Care
 
 * Drug Companies: OxyContin [@oxycontin]
-  * 1% addiction rate advertised
+  * 1% addiction rate advertised (From non real world users)
   * 10-30% addiction rate in real life
 
 ---
 
-### Remendy
+### Remedy
 
 #### Good news
 
-There are already strong standard for testing on human subjects.  There is the IRB (Internal review board) proprocess.
-
-With required and continuous training and certification: CiTI training.
+There are already strong standard for testing on human subjects.  
+There is the IRB (Internal review board) preprocess.
 
 <br>
+
+It has required and continuous training and certification: CiTI training.
+
 <br>
+
 
 #### Bad news
 
-Only required for companies receiving federial government funding: Universities, Air Force, Army etc.
+Only required for companies receiving federal government funding: Universities, Air Force, Army etc.
+
+<br>
 
 Not required for companies that work with schools (state and local funding) and social media companies.
 
@@ -629,22 +674,54 @@ If $F_{upped}$ < 0, $\Delta$ should be halved.
 
 ---
 
-## Unseen Bias
 
-A/B Testing can help with unseen bias
 
-<hr>
+## One more thing to worry about
 
-I know of three small business that where started by young women in the Dayton area who did  
-not know their logo could affect people like me (over 40).
+## Seen and Unseen Bias
+
+Biases can increase the F-potential. 
 
 <br>
-They literally could  see their logo, 
+<hr>
+<br>
+
+Luckily, A/B Testing can help with both unseen and seen bias.
+
+
+
+---
+
+### Example: Unseen Bias
+
+I know of three small business that where started by **young** women 
+in the Dayton area. 
+
+Their original logo design used beautifully detailed font.
+<br>
+Unfortunately, this detailed font would make it difficult for people like me (over 40) to read it.
+
+<br>
+<hr>
+
+They literally could see their logo.
 
 <br>
 
 #### However
-Their logo was not readable to me at a distance!
+
+Their logo was not readable to me when I drove by!
+
+<br>
+
+### Unseen Bias
+
+This is an unseen bias.
+<br>
+These women (All of whom where lovely and kind) 
+did not know that they made a 
+logo could not be read by me.
+
 
 ---
 
@@ -653,27 +730,265 @@ Their logo was not readable to me at a distance!
 
 ![](./img/Contrast_freq.webp)
 
+The human eye's ability to resolve a spatial frequency is dependent on contrast.
+This contrast threshold function will change with age.
+
+- At ~40 your eye will need more contrast to *see*.
+
 ---
 
-### How logos change because of CTF
+### Logos evolve with Testing
+
+
+
+
+
+::::{.columns}
+:::{.column width="51%"}
 
 #### Starbucks Logo Evolution
 
+<br>
+<br>
 
-![](./img/Starbucks-Logo-history.jpg)
+Starbucks Logo has evolved to reduce high spatial information.
 
+<br>
+
+- Old Logo: High frequency information 
+  - thin lines
+- New Logo: Medium frequency:
+  - medium width lines
+
+<br>
 [@starbucks]
 
-### Risks for this change
+:::
+:::{.column width="45%"}
+
+![](./img/Starbucks-Logo-history.jpg){fig-align=center}
+
+
+:::
+::::
+
+
+### Change Risks
 
 - Attract more old people, alienate young
 - Loyal customers might not like change
 
+---
+
+## Known Bias
+### A/B Testing to reduce Researcher's Bias
+
+* Frequency range of Human Voice: 90Hz to 14,000Hz
+* Frequency range for the _Voice Spectrum_ over copper: 300Hz to 3,400Hz
+* Men, Women and Children have different fundamental frequency
+
+![](./img/lang_en_male_vs_female.png){width=625px}
+
+---
+
+### Shrill
+::::{.columns}
+:::{.column width=34%}
+
+<br>
+
+Most consonants spoken show in the 400 to 4500Hz.
+
+<br>
+
+With Women having most of the consonants showing up in the higher frequency's.
+
+<br>
+**Green Bar** shows the cutoff for the _voice spectrum_
+
+
+<br>
+
+This caused women's voices to sound **shrill**.
+
+:::
+:::{.column width=65%}
+
+![](./img/Long-term-average-spectrum.webp){width=700px}
+
+:::
+::::
+
+
+<br>
+It also made it hard to understand what they said, 
+since their voice was cut off.
+
+---
+
+### Bias has caused women to change.
+
+Margret Thatcher during her career changed her voice. 
+
+  * Dropped her main vocal frequency roughly 60Hz! [@shrill]
+  * Almost a 1/3!
+
+<br>
+
+Women's voices have dropped on average over 23Hz from 1945 to 1993. [@journalofvoice]
+
+<br>
+
+Women's voices have been becoming more manly.
+
+---
+
+### Was the Voice Spectrum Biased: Yes
+
+In 1927 a voice spectrum had to be defined.
+
+<br>
+
+J.C Steinberg (from AT&T) knew that the proposed voice frequency 
+cut off women's voices.  He wrote, for congress, a letter 
+titled "_Understanding Women_".
+
+<br>
+
+He states that men traditionally have an inability to understand women execpt when there tone is soft.  
+So, it is a "biological failing of women" [@shrill] that we can't understand them.  
+
+<br>
+
+The technology as is, is good.  
+
+<br>
+
+#### Market prospective
+
+In A/B Testing, we need to think does doing A or B make the company more sucessful.
+
+Women make up 1/2 the market.  
+<br>
+When another company/technology comes along 
+that has cover's women's voices better, 
+it is reasonable to assume that they will take over the market.
+
+- Who has a landline?
+---
+
+### My hero: HD-VOIP
+Note: Narrow Band (free to use) VOIP is 300 to 3,400Hz.
+
+![](./img/g711-g722-frequency-response.jpg){fig-align=center}
+
+[@voice_freq]
+
+---
+
+## Voice Bias in 21st century?
+
+With more diverse workforce, a research(er) bias  will go down.  
+
+- **True**
+
+<br>
+<hr>
+<br>
+
+##### But, there is still unseen bias in voice in the 21st century!
+
+<br>
+
+Google and Apple had a hard time getting voice recognition 
+to work for kids [@kids_voice]
+
+<br>
+
+Not only do kids speak at higher frequencies than women, they have different speaking patterns.
+
+<br>
+
+One can not simply take an adult's voice and shift the frequency.
+So ML/AI have a hard time figuring what kids are saying.
+
+<br>
+
+### Why kids are important
+
+The market for voice recognition for kids looks to have a strong market growth.
 
 
 
 ---
+
+## Conclusion
+
+
+A/B testing is a **randomized** controlled experiment done **in production**.
+
+<br>
+There are two tests: A and B, in which a single variable adjusted (B Test).
+<br>
+<br>
+This variation, **might** affect a user's behavior.
+ 
+<br>
+<hr>
+<br>
+
+### Your A/B Testing should:
+
+* Make the company more successful.
+* Follow some ethical guild lines, like the **$F_{upped}$** potential
+   - If $F_{upped}$ >0, test should be a no go.
+   - If $F_{upped}$ < 0, $\Delta$ should be halved. 
+
+<br>
+<hr>
+<br>
+
+### A/B Testing has Risk
+No free lunch.  
+Even after testing, test results might not make the company more successful.
+
+
+---
+
+## Gem City Tech
+
+::::{.columns}
+:::{.column width=69%}
+
+GemCity TECH’s mission is to grow the local industry and the community by providing a centralized destination for technical training, workshops and providing a forum for collaborating.
+
+<br>
+
+Currently, support eight special interest groups from a variety of technical disciplines.
+
+- Dayton Web Developers
+- Dayton Dynamic Languages
+- Dayton .net Developers
+- Gem City Games Developments
+- New to Tech
+- Frameworks
+- **Machine Learning / Artificial Intelligence (ML/AI)**
+- Code for Dayton
+
+:::
+:::{.column width=30%}
+
+![](img/qr-code.png)
+
+:::
+::::
+
+---
 ## Quotes
+
+C. Steinberg, in a brief titled “Understanding Women,” quips that “man’s traditional inability to understand women may have a basis of fact if one so wishes to interpret certain recent experiments in our Laboratories.” Steinberg’s experiments showed that the voiceband frequencies reduced the intelligibility of female speech by cutting out the higher frequency components necessary for the perception of certain consonants. [@shrill]
+
+ Australian women found that the average frequency of female speech dropped twenty-three hertz between 1945 and 1993. Margaret Thatcher famously worked with voice coaches to hone her auditory image, dropping her voice sixty hertz between the nineteen-sixties and the nineteen-eighties. [@shrill]
 
 Knowledge discovery in databases (KDD) is the process of discovering useful knowledge from a collection of data.
 
