@@ -10,11 +10,12 @@ format:
   revealjs:
     theme: [evelyn.scss]
     css: evelyn.css
-    logo: 'img/dayton_gearfilled.png'
-    footer: " Created by Evelyn J. Boettcher (2022)"
+    logo: 'img/techfirstlogo.png'
+    footer: " Taste of IT Conference "
     scrollable: true
     transition: slide
     transition-speed: fast
+    
     chalkboard:
       buttons: true
 

@@ -103,9 +103,16 @@ input[type="checkbox"]:disabled {
 
 .footer-default {
   padding-left: 30rem;
-  font-size: 0.5em !important;
+  font-size: 0.7em !important;
+  color: #f98d43 !important;
+  font-weight: bold !important;
   }
 
+.slide-logo.r-stretch {
+  max-width: 15vw !important;
+  max-height: 4vw !important;
+
+}
 .reveal div.sourceCode{
   margin-bottom: 1em;
   overflow: auto;

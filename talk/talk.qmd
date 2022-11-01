@@ -10,7 +10,7 @@ fig-cap-location: margin
 date: Nov 16th, 2022
 ---
 
-## A / B Testing 
+## A / B Testing { background-image='img/bluebox.svg' background-size="100% 100% " background-position="0%  center" }
 
 A/B testing is a **randomized** controlled experiment done in production.
 
