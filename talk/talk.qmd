@@ -1,13 +1,21 @@
 ---
 title: "Power of A/B Testing"
 subtitle: "Beyond user feedback"
+title-slide-attributes:
+    data-background-image: 'img/2022Taste_of_IT_titleBackground.svg'
+    data-background-size: "100% 100% " 
+    data-background-position: "0% "
+    data-background-opacity: "0.95"
 bibliography: references.bib
-author: Evelyn J. Boettcher
+date: Developers & Data Analytics
+author: Presented by Evelyn J. Boettcher, Founder of DiDacTex, LLC
 format:
     revealjs:
         incremental: false
+    
+
 fig-cap-location: margin
-date: Nov 16th, 2022
+
 ---
 
 ## A / B Testing { background-image='img/bluebox.svg' background-size="100% 100% " background-position="0%  center" }
@@ -38,7 +46,8 @@ This variation, **might** affect a user's behavior.
 
 ---
 
-### Weekly Planner Choices
+## { background-image='img/blue_shape.svg' background-size="100% 100% " background-position="0%  center" }
+### Weekly Planner Choices 
 
 ::::{.columns}
 :::{.column width="10%"}
@@ -47,19 +56,13 @@ This variation, **might** affect a user's behavior.
 #### A
 :::
 :::{.column width="30%"}
-
 ![](img/CIRCA_JOTLET_WEEKLY.webp){width=200}
 
 :::
-
-
 :::{.column width="5%"}
 #### B
 :::
-
 :::{.column}
-
-
 ![](img/stamp-weekly.jpg){width=200}
 
 :::
@@ -71,27 +74,25 @@ This variation, **might** affect a user's behavior.
 #### So why do A/B Testing
 
 ::: {.incremental}
-
 - Why spend the resources to do tests
 - Why risk angering your customers with changes?
 - I got data miners, I do not need tests!
-  - I can find my answers in the data, thank you very much
 - I am a developer, I don't need to know the business side
 
 :::
 
 ---
 
-### Life is complicated
+## { background-image='img/blue_shape.svg' background-size="100% 100% " background-position="0%  center" }
+
+### Life is complicated. 
 
 Domain knowledge only gets you so far!
+
 <br>
-Subject matter experts (SME) from Microsoft, Netflixs etc, find when they implement changes 
+
+Subject-matter experts (SME) from Microsoft, Netflixs etc, find when they implement changes 
 that only a small fraction of their ideas have the planned outcome [@sweet].
-
-<br>
-
-Again, domain knowledge only gets you so far.
 
 <br>
 
@@ -101,23 +102,20 @@ that variable interacts with a million other variables.
 You simply can not model everything or know everything.
 
 ::::{.columns}
-:::{.column width=60%}
+:::{.column width=45%}
 
-![](./img/10_lightbulb.webp){width=90%}
+![](./img/10_lightbulb.webp)
 
 :::
-::: {.column width=39%}
-
-<br>
-
+::: {.column width=55%}
 
 ::: {.incremental}
 
-- #### Any change can hurt a business.
-  - Event tested changes
+- #### Any change can hurt. 
+  - Even tested changes
     - Though less likely!
-- #### Change can help a business
-  - "If we are not growing, we are die-ing" (old Program Manager)
+- #### Change can help
+  - "If you're not growing, <br>you're die-ing" 
 
 :::
 :::
@@ -125,7 +123,8 @@ You simply can not model everything or know everything.
 
 ---
 
-## Gedanken: 
+## Gedanken: { background-image='img/bluebox.svg' background-size="100% 100% " background-position="0%  center" }
+
 
 ::::{.columns}
 :::{.column width=70%}
@@ -161,6 +160,9 @@ They will have to remove one pizza from their lineup to add the new item.
 
 ---
 
+## { background-image='img/blue_shape.svg' background-size="100% 100% " background-position="0%  center" }
+
+
 ::::{.columns}
 :::{.column width=60%}
 
@@ -184,6 +186,7 @@ A week later sales go down.
 :::
 ::::
 
+
 ### What happened?
 
 ::: {.incremental}
@@ -202,7 +205,8 @@ A week later sales go down.
 
 ---
 
-## A / B Testing Limitations
+## A / B Testing Limitations { background-image='img/blue_shape.svg' background-size="100% 100% " background-position="0%  center" }
+
 
 A/B Testing is used to clarify a vision, but does not create vision.
 
@@ -213,14 +217,15 @@ For example, an ophthalmologist quickly gives you a set of two choices;
 
 <br>
 
+##### Though without a clarity,  a vision has serious limitation.
 
-#### Though without a clarity, </br> a vision has serious limitation.
+![](./img/glasses.webp){.absolute width="70%"}
 
-![](./img/glasses.webp){fig-align=center width=70%}
+
 
 ---
 
-## A/B Testing and DevOps
+## A/B Testing and DevOps { background-image='img/bluebox.svg' background-size="100% 100% " background-position="0%  center" }
 
 
 ::::{.columns}
@@ -258,15 +263,16 @@ into the DevOps?
 **Third Way:** Principles of Continuous Learning
 
 - Create a culture of continual learning and experimentation
+![](./img/devops_ways.svg){fig-align=center width=70%}
   
 :::
 ::::
 
-![](./img/devops_ways.svg){fig-align=center width=75%}
 
 
 ---
 
+## { background-image='img/blue_shape.svg' background-size="100% 100% " background-position="0%  center" }
 ### A/B Testing and the Three ways
 
 ![](./img/devops_ways.svg){width=550px}
@@ -295,15 +301,13 @@ Feedback will be the results of the A/B Testing.
 
 ---
 
-## A/B Tests
+## A/B Tests { background-image='img/blue_shape.svg' background-size="100% 100% " background-position="0%  center" }
 ### The good, the bad and the ugly
-<br>
-
 
 :::: {.columns }
-::: {.column width=20% }
+::: {.column width=10% }
 :::
-::: {.column width=60% }
+::: {.column width=70% }
 
 
 #### Rewards
@@ -316,8 +320,6 @@ Feedback will be the results of the A/B Testing.
 :::
 ::::
 
-<br>
-
 ::::{.columns}
 :::{.column}
 
@@ -325,9 +327,9 @@ Feedback will be the results of the A/B Testing.
 
 - Test cost time and money
 - Don't know what percent of risk is acceptable
-  - Medical and Defence will have lower threshold of risk
+  - Medical and Defence will have higher threshold of risk
 - Upset customers
-- Change can makes things worse
+- Change can make things worse
 
 
 :::
@@ -350,7 +352,7 @@ Feedback will be the results of the A/B Testing.
 
 
 
-## Reducing Costs
+## Reducing Costs { background-image='img/blue_shape.svg' background-size="100% 100% " background-position="0%  center" }
 ### Minimal Viable Product
 
 Need to create the smallest, fastest A/B Test that has statically meaningful numbers.
@@ -372,6 +374,7 @@ $$
 
 ---
 
+## { background-image='img/blue_shape.svg' background-size="100% 100% " background-position="0%  center" }
 ### Use Statistics 
 
 <br>
@@ -394,6 +397,7 @@ $$
 
 ---
 
+## { background-image='img/blue_shape.svg' background-size="100% 100% " background-position="0%  center" }
 ### Important
 
 <br>
@@ -419,13 +423,14 @@ More on this later
 
 ---
 
+## { background-image='img/blue_shape.svg' background-size="100% 100% " background-position="0%  center" }
 <br><br><br>
 
 ### Where does 2.48 comes from?
 
 ---
 
-## Rules of Thumb: 20 / 5 Rule
+## Rules of Thumb: 20 / 5 Rule { background-image='img/bluebox.svg' background-size="100% 100% " background-position="0%  center" }
 
 <br>
 
@@ -487,6 +492,7 @@ $$
 
 ---
 
+## { background-image='img/blue_shape.svg' background-size="100% 100% " background-position="0%  center" }
 #### From Standard Normal Distribution
 
 ::::{.columns}
@@ -532,7 +538,7 @@ Graph from [@norm-dist]
 
 
 
-
+## { background-image='img/bluebox.svg' background-size="100% 100% " background-position="0%  center" }
 ::::{.columns}
 :::{.column}
 
@@ -580,6 +586,7 @@ Graph from [@norm-dist]
 
 ---
 
+## { background-image='img/bluebox.svg' background-size="100% 100% " background-position="0%  center" }
 Yeah, we have our minimal viable test.
 
 <br>
@@ -598,7 +605,7 @@ One more thing to worry about
 
 ---
 
-## Do no Harm: F potential
+## Do no Harm: F potential { background-image='img/blue_shape.svg' background-size="100% 100% " background-position="0%  center" }
 
 If we implement B, how F--ed up will that make the users?
 
@@ -623,6 +630,7 @@ These are some of the ones we know about.
 
 ---
 
+## { background-image='img/blue_shape.svg' background-size="100% 100% " background-position="0%  center" }
 ### Remedy
 
 #### Good news
@@ -675,9 +683,9 @@ If $F_{upped}$ < 0, $\Delta$ should be halved.
 
 
 
-## One more thing to worry about
+## One more thing to worry about { background-image='img/bluebox.svg' background-size="100% 100% " background-position="0%  center" }
 
-## Seen and Unseen Bias
+## Seen and Unseen Bias { background-image='img/blue_shape.svg' background-size="100% 100% " background-position="0%  center" }
 
 Biases can increase the F-potential. 
 
@@ -691,6 +699,7 @@ Luckily, A/B Testing can help with both unseen and seen bias.
 
 ---
 
+## { background-image='img/blue_shape.svg' background-size="100% 100% " background-position="0%  center" }
 ### Example: Unseen Bias
 
 I know of three small business that where started by **young** women 
@@ -729,22 +738,20 @@ logo could not be read by me.
 
 ---
 
+
+## { background-image='img/bluebox.svg' background-size="100% 100% " background-position="0%  center" }
 ### Contrast threshold function (CTF) of the Eye
-
-
-![](./img/Contrast_freq.webp)
 
 The human eye's ability to resolve a spatial frequency is dependent on contrast.
 This contrast threshold function will change with age.
 
 - At ~40 your eye will need more contrast to *see*.
 
+![](./img/Contrast_freq.webp){.absolute width=98%}
 ---
 
+## { background-image='img/bluebox.svg' background-size="100% 100% " background-position="0%  center" }
 ### Logos evolve with Testing
-
-
-
 
 
 ::::{.columns}
@@ -753,7 +760,7 @@ This contrast threshold function will change with age.
 #### Starbucks Logo Evolution
 
 <br>
-<br>
+
 
 Starbucks Logo has evolved to reduce high spatial information.
 
@@ -784,7 +791,7 @@ Starbucks Logo has evolved to reduce high spatial information.
 
 ---
 
-## Known Bias
+## Known Bias { background-image='img/blue_shape.svg' background-size="100% 100% " background-position="0%  center" }
 ### A/B Testing to reduce Researcher's Bias
 
 * Frequency range of Human Voice: 90Hz to 14,000Hz
@@ -795,7 +802,8 @@ Starbucks Logo has evolved to reduce high spatial information.
 
 ---
 
-### Shrill
+## Shrill { background-image='img/bluebox.svg' background-size="100% 100% " background-position="0%  center" }
+
 ::::{.columns}
 :::{.column width=34%}
 
@@ -830,6 +838,7 @@ since their voice was cut off.
 
 ---
 
+## { background-image='img/blue_shape.svg' background-size="100% 100% " background-position="0%  center" }
 ### Bias has caused women to change.
 
 Margret Thatcher during her career changed her voice. 
@@ -847,6 +856,7 @@ Women's voices have been becoming more manly.
 
 ---
 
+## { background-image='img/bluebox.svg' background-size="100% 100% " background-position="0%  center" }
 ### Was the Voice Spectrum Biased: Yes
 
 In 1927 a voice spectrum had to be defined.
@@ -854,33 +864,30 @@ In 1927 a voice spectrum had to be defined.
 <br>
 
 J.C Steinberg (from AT&T) knew that the proposed voice frequency 
-cut off women's voices.  He wrote, for congress, a letter 
-titled "_Understanding Women_".
+cut off women's voices.  He wrote a letter titled "_Understanding Women_".
 
 <br>
 
-He states that men traditionally have an inability to understand women execpt when there tone is soft.  
-So, it is a "biological failing of women" [@shrill] that we can't understand them.  
+He states that men traditionally have an inability to understand women except when there tone is soft.  
+So, it is a "biological failing of women" [@shrill] that we can't understand them.  $\therefore$ _The technology as is, is good._  
 
-<br>
-
-The technology as is, is good.  
-
-<br>
+<hr>
 
 #### Market prospective
 
-In A/B Testing, we need to think does doing A or B make the company more sucessful.
+In A/B Testing, we focus on the question does doing A or B make the company more successful.
 
-Women make up 1/2 the market.  
-<br>
+* Women make up 1/2 the market.  
+
 When another company/technology comes along 
-that has cover's women's voices better, 
-it is reasonable to assume that they will take over the market.
+that cover's women's voices better, 
+it is reasonable to assume that they will get that market share.
 
 - Who has a landline?
+
 ---
 
+## { background-image='img/bluebox.svg' background-size="100% 100% " background-position="0%  center" }
 ### My hero: HD-VOIP
 Note: Narrow Band (free to use) VOIP is 300 to 3,400Hz.
 
@@ -890,7 +897,7 @@ Note: Narrow Band (free to use) VOIP is 300 to 3,400Hz.
 
 ---
 
-## Voice Bias in 21st century?
+## Voice Bias in 21st century? { background-image='img/blue_shape.svg' background-size="100% 100% " background-position="0%  center" }
 
 With more diverse workforce, a research(er) bias  will go down.  
 
@@ -926,7 +933,7 @@ The market for voice recognition for kids looks to have a strong market growth.
 
 ---
 
-## Conclusion
+## Conclusion { background-image='img/blue_shape.svg' background-size="100% 100% " background-position="0%  center" }
 
 
 A/B testing is a **randomized** controlled experiment done **in production**.
@@ -934,10 +941,10 @@ A/B testing is a **randomized** controlled experiment done **in production**.
 <br>
 There are two tests: A and B, in which a single variable adjusted (B Test).
 <br>
-<br>
+
 This variation, **might** affect a user's behavior.
  
-<br>
+
 <hr>
 <br>
 
@@ -959,16 +966,18 @@ Even after testing, test results might not make the company more successful.
 
 ---
 
-## Gem City Tech
+## Thank you { background-image='img/bluebox.svg' background-size="100% 100% " background-position="0%  center" }
+
+### Gem City Tech
 
 ::::{.columns}
-:::{.column width=69%}
+:::{.column width=72%}
 
 GemCity TECH’s mission is to grow the local industry and the community by providing a centralized destination for technical training, workshops and providing a forum for collaborating.
 
 <br>
 
-Currently, support eight special interest groups from a variety of technical disciplines.
+Currently, support many special interest groups from a variety of technical disciplines.
 
 - Dayton Web Developers
 - Dayton Dynamic Languages
@@ -980,83 +989,18 @@ Currently, support eight special interest groups from a variety of technical dis
 - Code for Dayton
 
 :::
-:::{.column width=30%}
+:::{.column width=26%}
 
 ![](img/qr-code.png)
 
 :::
 ::::
 
+
+**Evelyn Boettcher
+ejb@DiDacTex.com**
+
+
 ---
-## Quotes
 
-C. Steinberg, in a brief titled “Understanding Women,” quips that “man’s traditional inability to understand women may have a basis of fact if one so wishes to interpret certain recent experiments in our Laboratories.” Steinberg’s experiments showed that the voiceband frequencies reduced the intelligibility of female speech by cutting out the higher frequency components necessary for the perception of certain consonants. [@shrill]
-
- Australian women found that the average frequency of female speech dropped twenty-three hertz between 1945 and 1993. Margaret Thatcher famously worked with voice coaches to hone her auditory image, dropping her voice sixty hertz between the nineteen-sixties and the nineteen-eighties. [@shrill]
-
-Knowledge discovery in databases (KDD) is the process of discovering useful knowledge from a collection of data.
-
-The Phoenix Project Quotes Showing 1-30 of 310
-“Improving daily work is even more important than doing daily work.” [@pheonix]
-
-“until code is in production, no value is actually being generated, because it’s merely WIP stuck in the system.” [@pheonix]
-
-“every work center is made up of four things: the machine, the man, the method, and the measures.” [@pheonix]
-
-[@pheonix]
-Framework #1: The Phoenix Project/DevOps Handbook’s Three Ways
-If you’ve read either The Phoenix Project or The DevOps Handbook, you’ve been introduced to The Three Ways framework for DevOps:
-
-The First Way: Principles of Flow
-The Second Way: Principles of Feedback
-The Third Way: Principles of Continuous Learning
-The First Way: Principles of Flow
-The First Way is mostly concerned with accelerating the “flow” of work throughout a process. Gene Kim also refers to the First Way as Systems Thinking in his article The Three Ways: Principles Underpinning DevOps. Whether you’re calling it Flow or Systems Thinking, the principles underpinning the First Way are working toward the same end: viewing the flow of work as one continuous system (unsiloed) that can be continually refined and optimized.
-
-Some of the key principles of the First Way are:
-
-Making work “visible”. Unlike manufacturing processes, which are easily observable on a plant floor, the flow of software through its development lifecycle is not easily seen.
-Using methods such as Kanban boards can surface the activities going on behind the scenes, 
-by showing the left-to-right movement of a user story through the development phases.
-
-Limiting work-in-progress (WIP). Keeping work-in-progress to a minimum has also been shown to accelerate work flow, because it minimizes multi-tasking and context-switching.
-
-Reducing batch sizes. “Chunking” work into smaller pieces like a two-week sprint can also help deliver features (albeit smaller ones) and bug fixes to the customer faster. Issues are often caught earlier when those updates and additions are released sooner.
-
-Reducing hand-offs between teams. The risk of “dropping the baton” increases as the hand-offs do. Although hand-offs can’t be completely minimized, the key is to keep the teams in tight communication with one another so that the hand-off itself is almost a non-event rather than a large ordeal with the potential for communication missteps along the way.
-
-Identifying and removing constraints and waste. Constraints might be bottlenecks in the process, such as environments, test setup, and overly tight architecture, while waste includes things like manual work, heroics, and context-switching.
-The Second Way: Principles of Feedback
-The Second Way works to enable fast and constant feedback cycles throughout all stages of a development cycle.
-
-Some of the key principles of the Second Way are:
-
-Swarming and solving problems to build new knowledge. 
-This principle fits into the “fail fast” mentality, so that teams can find issues with an implementation as soon as possible and address them early and often as iterations continue.
-
-Pushing quality closer to source. This principle is at the core of the DevSecOps movement, 
-which is concerned with addressing security concerns during the development cycle, 
-instead of at the end, when rework to remediate is more difficult and costly.
-
-Optimizing for downstream work centers. 
-This principle works against the “throw it over the wall” mentality,
-by underscoring that development should be just as invested in their application being deployable, working with operations to bridge that gap (and vice versa).
-The Third Way: Principles of Continuous Learning
-The Third Way seeks to create a culture of continual learning and experimentation within the development organization.
-
-Some of the key principles of the Third Way are:
-
-Enabling organizational learning and a safety culture. Leaders must help “set the tone” for the organization, making it okay to learn, make mistakes, and try again.
-
-Institutionalizing the improvement of daily work. Improving what you do and how you accomplish it should be part of everyone’s daily thinking and call to action.
-
-Transforming local discoveries to global improvements. Surfacing and sharing improvements at all levels will help enable a “bubble up” culture of continuous improvement.
-
-Injecting resilience patterns into daily work. Some examples might include rehearsing failures, and working toward improving key metrics for deployment.
-
-Leaders enforcing a learning culture. Organization-wide learning is unlikely to take hold and become pervasive unless it is sanctioned and exemplified by its leaders. So being intentional about communicating the value of learning and problem-solving is crucial to building that culture.
-
-### References
-
-::: {#refs}
-:::
+## References

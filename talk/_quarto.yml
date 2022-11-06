@@ -8,7 +8,7 @@ format:
     code-fold: true
     html-math-method: katex
   revealjs:
-    theme: [evelyn.scss]
+    theme: [default, evelyn.scss]
     css: evelyn.css
     logo: 'img/techfirstlogo.png'
     footer: " Taste of IT Conference "

@@ -102,10 +102,13 @@ input[type="checkbox"]:disabled {
 
 
 .footer-default {
-  padding-left: 30rem;
+  box-sizing: content-box;
+  width: 50% !important;
+  padding-left: 25rem;
   font-size: 0.7em !important;
   color: #f98d43 !important;
   font-weight: bold !important;
+  text-align: center !important;
   }
 
 .slide-logo.r-stretch {
