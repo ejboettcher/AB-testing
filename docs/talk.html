@@ -584,11 +584,11 @@ Feedback will be the results of the A/B Testing. <br> <br></p>
 <section id="reducing-costs" class="slide level2" data-background-image="img/blue_shape.svg" data-background-size="100% 100% " data-background-position="0%  center">
 <h2>Reducing Costs</h2>
 <h3 id="minimal-viable-product">Minimal Viable Product</h3>
-<p>Need to create the smallest, fastest A/B Test that has statically meaningful numbers.</p>
+<p>Need to create the smallest, fastest A/B Test that is statistically meaningful.</p>
 <p><br> <br></p>
 <h3 id="how-do-you-minimize-the-number-of-samples-n">How do you minimize the number of samples (N)?</h3>
 <p><br></p>
-<p>Want an N that will have 5% false positive and 20% false negative.</p>
+<p>Want an N samples that show a 5% false positive and 20% false negative.</p>
 <p><br></p>
 <p><span class="math display">\[
 N = ?
@@ -609,14 +609,14 @@ N &gt; 2.48 \left( \frac{\sigma_\Delta}{\Delta} \right)^2
 <li>It cost money to make a change</li>
 <li>Increase to bottom line needs to be significant, to accept risk
 <ul>
-<li><em>Example</em>: Trader Janes Pizza needs sales to increase by 3%</li>
+<li><em>Example</em>: Trader Jane’s Pizza needs sales to increase by 3%</li>
 </ul></li>
 </ul></li>
 <li><span class="math inline">\(\sigma_\Delta\)</span>: estimated by business historical data
 <ul>
 <li><span class="math inline">\(\sigma_\Delta\)</span> = <span class="math inline">\(~\sqrt{2 \sigma_{log}^2}\)</span>
 <ul>
-<li><span class="math inline">\(\sigma_{log}\)</span>: How much does sales fluctuate</li>
+<li><span class="math inline">\(\sigma_{log}\)</span>: How much does sales fluctuate over a given time period.</li>
 </ul></li>
 </ul></li>
 </ul>
@@ -644,6 +644,10 @@ N &gt; 2.48 \left( \frac{\sigma_\Delta}{\Delta} \right)^2
 <h2></h2>
 <p><br><br><br></p>
 <h3 id="where-does-2.48-comes-from">Where does 2.48 comes from?</h3>
+<p><br> <br></p>
+<p><span class="math display">\[
+N &gt; 2.48 \left( \frac{\sigma_\Delta}{\Delta} \right)^2
+\]</span></p>
 </section>
 <section id="rules-of-thumb-20-5-rule" class="slide level2" data-background-image="img/bluebox.svg" data-background-size="100% 100% " data-background-position="0%  center">
 <h2>Rules of Thumb: 20 / 5 Rule</h2>
@@ -662,24 +666,28 @@ N &gt; 2.48 \left( \frac{\sigma_\Delta}{\Delta} \right)^2
 <li>A is better but, you implemented B</li>
 <li>incurs an explicit cost</li>
 </ul>
-<p><br></p>
 </div><div class="column">
 <p><strong>False negative</strong></p>
 <ul>
 <li>B is better but, you stuck with A</li>
-<li>incurs an explicit cost</li>
+<li>incurs an implicit cost</li>
 </ul>
-<p><br></p>
 </div>
 </div>
 <hr>
 <div class="columns">
 <div class="column">
-<p><span class="math inline">\(\alpha\)</span> == <strong>False Positive rate</strong> (5%: 1.64)</p>
+<p><span class="math inline">\(\alpha\)</span> == <strong>False Positive rate</strong></p>
+<ul>
+<li>5% =&gt; <span class="math inline">\(z_{score}\)</span> = -1.64</li>
+</ul>
 <p><br></p>
 <p>You can assume B is better than A</p>
 </div><div class="column">
-<p><span class="math inline">\(\beta\)</span>== <strong>False Negative rate</strong> (20%: 0.84)</p>
+<p><span class="math inline">\(\beta\)</span>== <strong>False Negative rate</strong></p>
+<ul>
+<li>20% =&gt; <span class="math inline">\(z_{score}\)</span> = 0.84</li>
+</ul>
 <p><br></p>
 <p>You can assume A is better than B</p>
 </div>
@@ -689,10 +697,12 @@ N &gt; 2.48 \left( \frac{\sigma_\Delta}{\Delta} \right)^2
 <h2></h2>
 <h4 id="from-standard-normal-distribution">From Standard Normal Distribution</h4>
 <div class="columns">
-<div class="column" style="width:25%;">
+<div class="column" style="width:32%;">
 <p><strong>Mean</strong> is 0</p>
 <p><br></p>
-<p><strong>Standard deviation:</strong> <br> <span class="math inline">\(\sigma\)</span> = 1</p>
+<p><strong>Standard deviation</strong>: <span class="math inline">\(\sigma\)</span></p>
+<p><br></p>
+<p><span class="math inline">\(z_{score}\)</span> measures the distance between a point and the mean in units of <span class="math inline">\(\sigma\)</span></p>
 <hr>
 <p><br></p>
 <p><span class="math inline">\(Z_{score}\)</span> = -1.64 (<strong>5%</strong>)</p>
@@ -701,9 +711,11 @@ N &gt; 2.48 \left( \frac{\sigma_\Delta}{\Delta} \right)^2
 <p><span class="math display">\[
 1.64 + 0.84 = 2.48
 \]</span></p>
-<p><br> <br> <br> <br></p>
-<p>Graph from <span class="citation" data-cites="norm-dist">(<a href="#/references" role="doc-biblioref" onclick="">Pierce, n.d.</a>)</span></p>
-</div><div class="column" style="width:74%;">
+<p><br></p>
+<ul>
+<li>*Graph <span class="citation" data-cites="norm-dist">(<a href="#/references" role="doc-biblioref" onclick="">Pierce, n.d.</a>)</span></li>
+</ul>
+</div><div class="column" style="width:68%;">
 <iframe width="720px" height="530px" src="norm-dist.html">
 </iframe>
 </div>
@@ -714,12 +726,18 @@ N &gt; 2.48 \left( \frac{\sigma_\Delta}{\Delta} \right)^2
 <div class="columns">
 <div class="column">
 <h3 id="false-positive">False Positive</h3>
-<p><span class="math inline">\(\alpha\)</span> == <strong>False Positive rate</strong> (5%: 1.64)</p>
+<p><span class="math inline">\(\alpha\)</span> == <strong>False Positive rate</strong></p>
+<ul>
+<li>5% =&gt; <span class="math inline">\(z_{score}\)</span> = -1.64</li>
+</ul>
 <p><br></p>
 <p>&nbsp;Assume: B is better than A</p>
 </div><div class="column">
 <h3 id="false-negative">False Negative</h3>
-<p><span class="math inline">\(\beta\)</span>== <strong>False Negative rate</strong> (20%: 0.84)</p>
+<p><span class="math inline">\(\beta\)</span>== <strong>False Negative rate</strong></p>
+<ul>
+<li>20% =&gt; <span class="math inline">\(z_{score}\)</span> = 0.84</li>
+</ul>
 <p><br></p>
 <p>Assume: A is better than B</p>
 </div>
@@ -735,25 +753,32 @@ N &gt; 2.48 \left( \frac{\sigma_\Delta}{\Delta} \right)^2
 </section>
 <section id="section-9" class="slide level2" data-background-image="img/bluebox.svg" data-background-size="100% 100% " data-background-position="0%  center">
 <h2></h2>
-<p>Yeah, we have our minimal viable test.</p>
+<h3 id="yeah">Yeah,</h3>
+<p>we have our minimal viable test.</p>
 <p><br></p>
 <p>But we are not done yet.</p>
 <p><br></p>
 <p>One more thing to worry about</p>
 <p><br></p>
-<h3 id="can-this-harm-our-customers">Can this harm our customers?</h3>
+<h3 id="can-this-changetest-harm-our-customers">Can this (change/test) harm our customers?</h3>
 </section>
 <section id="do-no-harm-f-potential" class="slide level2" data-background-image="img/blue_shape.svg" data-background-size="100% 100% " data-background-position="0%  center">
 <h2>Do no Harm: F potential</h2>
 <p>If we implement B, how F–ed up will that make the users?</p>
 <p><br></p>
+<p>If we tested B, how F–ed up will that make the users?</p>
+</section>
+<section class="slide level2">
+
 <h3 id="social-sites">Social Sites</h3>
-<p>Group mindset has been around since the 1950’s. Current research shows that our minds physically change when we work together <span class="citation" data-cites="change-minds">(<a href="#/references" role="doc-biblioref" onclick="">Hughes, n.d.</a>)</span>.</p>
-<p>So it is scary to read A/B Testing being done on users without consent, knowledge and at this scale. These are some of the ones we know about.</p>
+<p>A/B Testing is being done on users without consent, knowledge and at scale (100K of users).</p>
+<p><br></p>
+<p>Group mindset has been around since the 1950’s. Current research shows that our minds physically change when we work together <span class="citation" data-cites="change-minds">(<a href="#/references" role="doc-biblioref" onclick="">Hughes, n.d.</a>)</span> socially.</p>
+<p>So it is scary to read</p>
 <ul>
 <li>Facebook: Tested their algorithm to see if it really does radicalize people <span class="citation" data-cites="facebook-radical">(<a href="#/references" role="doc-biblioref" onclick="">Zadrozny, n.d.</a>)</span></li>
-<li>Linked-In: Tested on 20 million users to find out how links affect jobs <span class="citation" data-cites="linkedin-jobs">(<a href="#/references" role="doc-biblioref" onclick="">Singer, n.d.</a>)</span></li>
-<li>Facebook: 700,000 users to see if they can make them sad <span class="citation" data-cites="facebook-sad">(<a href="#/references" role="doc-biblioref" onclick="">Hern, n.d.</a>)</span></li>
+<li>LinkedIn: Tested on 20 million users to find out how links affect people’s career/jobs <span class="citation" data-cites="linkedin-jobs">(<a href="#/references" role="doc-biblioref" onclick="">Singer, n.d.</a>)</span></li>
+<li>Facebook: Tested on 700,000 users to see if they can make them sad <span class="citation" data-cites="facebook-sad">(<a href="#/references" role="doc-biblioref" onclick="">Hern, n.d.</a>)</span></li>
 </ul>
 <h3 id="health-care">Health Care</h3>
 <ul>
@@ -779,7 +804,9 @@ There is the IRB (Internal review board) preprocess.</p>
 <p>Not required for companies that work with schools (state and local funding) and social media companies.</p>
 <p><br></p>
 <h3 id="f-potential">F potential</h3>
-<p>In light of this, I propose researchers use the F potential</p>
+<p>In light of this, I propose researchers use the F potential.</p>
+<p><br></p>
+<p>(Currently, not a real thing. Just something to think about.)</p>
 </section>
 <section class="slide level2">
 
@@ -793,11 +820,13 @@ F_{upped} =  \begin{cases}
        \text{-1,} &amp;\quad\text{becomes a lot better} \\
      \end{cases}
 \]</span></p>
-<p>If <span class="math inline">\(F_{upped}\)</span> &gt;0, test should be a no go.</p>
+<p>If <span class="math inline">\(F_{upped}\)</span> &gt; 0, test should be a no-go.</p>
 <p>If <span class="math inline">\(F_{upped}\)</span> &lt; 0, <span class="math inline">\(\Delta\)</span> should be halved.</p>
 <ul>
-<li>e.g.&nbsp;the amount of gain the company needs to make from change, should be halved.</li>
+<li>e.g.&nbsp;<span class="math inline">\(\Delta\)</span> is the amount of gain the company needs to make the change.</li>
 </ul>
+<p><br></p>
+<p><em>Example</em>: Trader Jane’s Pizza needs sales to increase by 3% (<span class="math inline">\(\Delta\)</span>). <br> If pizza made people better, then <span class="math inline">\(\Delta=1.5\%\)</span>.</p>
 </section>
 <section id="one-more-thing-to-worry-about" class="slide level2" data-background-image="img/bluebox.svg" data-background-size="100% 100% " data-background-position="0%  center">
 <h2>One more thing to worry about</h2>
@@ -920,7 +949,7 @@ F_{upped} =  \begin{cases}
 <p><br></p>
 <p>J.C Steinberg (from AT&amp;T) knew that the proposed voice frequency cut off women’s voices. He wrote a letter titled “<em>Understanding Women</em>”.</p>
 <p><br></p>
-<p>He states that men traditionally have an inability to understand women except when there tone is soft.<br>
+<p>He states that men traditionally have an inability to understand women except when their tone is soft.<br>
 So, it is a “biological failing of women” <span class="citation" data-cites="shrill">(<a href="#/references" role="doc-biblioref" onclick="">Tallon, n.d.</a>)</span> that we can’t understand them. <span class="math inline">\(\therefore\)</span> <em>The technology as is, is good.</em></p>
 <hr>
 <h4 id="market-prospective">Market prospective</h4>
@@ -970,9 +999,9 @@ So, it is a “biological failing of women” <span class="citation" data-cites=
 <h3 id="your-ab-testing-should">Your A/B Testing should:</h3>
 <ul>
 <li>Make the company more successful.</li>
-<li>Follow some ethical guild lines, like the <strong><span class="math inline">\(F_{upped}\)</span></strong> potential
+<li>Follow some ethical guidelines, like the <strong><span class="math inline">\(F_{upped}\)</span></strong> potential
 <ul>
-<li>If <span class="math inline">\(F_{upped}\)</span> &gt;0, test should be a no go.</li>
+<li>If <span class="math inline">\(F_{upped}\)</span> &gt; 0, test should be a no-go.</li>
 <li>If <span class="math inline">\(F_{upped}\)</span> &lt; 0, <span class="math inline">\(\Delta\)</span> should be halved.</li>
 </ul></li>
 </ul>
@@ -985,12 +1014,12 @@ Even after testing, test results might not make the company more successful.</p>
 </section>
 <section id="thank-you" class="slide level2" data-background-image="img/bluebox.svg" data-background-size="100% 100% " data-background-position="0%  center">
 <h2>Thank you</h2>
+<p>Please check out Gem City Tech.</p>
+<p><br></p>
 <h3 id="gem-city-tech">Gem City Tech</h3>
+<p>Gem City TECH’s mission is to grow the local industry and the community by providing a centralized destination for technical training, workshops and providing a forum for collaborating.</p>
 <div class="columns">
 <div class="column" style="width:72%;">
-<p>GemCity TECH’s mission is to grow the local industry and the community by providing a centralized destination for technical training, workshops and providing a forum for collaborating.</p>
-<p><br></p>
-<p>Currently, support many special interest groups from a variety of technical disciplines.</p>
 <ul>
 <li>Dayton Web Developers</li>
 <li>Dayton Dynamic Languages</li>
@@ -1005,6 +1034,7 @@ Even after testing, test results might not make the company more successful.</p>
 <p><img data-src="img/qr-code.png" class="margin-caption"></p>
 </div>
 </div>
+<hr>
 <p><strong>Evelyn Boettcher ejb@DiDacTex.com</strong></p>
 </section>
 <section id="references" class="slide level2 smaller scrollable">

@@ -12,7 +12,6 @@ author: Presented by Evelyn J. Boettcher, Founder of DiDacTex, LLC
 format:
     revealjs:
         incremental: false
-    
 
 fig-cap-location: margin
 
@@ -355,7 +354,7 @@ Feedback will be the results of the A/B Testing.
 ## Reducing Costs { background-image='img/blue_shape.svg' background-size="100% 100% " background-position="0%  center" }
 ### Minimal Viable Product
 
-Need to create the smallest, fastest A/B Test that has statically meaningful numbers.
+Need to create the smallest, fastest A/B Test that is statistically meaningful.
 
 <br>
 <br> 
@@ -364,7 +363,7 @@ Need to create the smallest, fastest A/B Test that has statically meaningful num
 
 <br>
 
-Want an N that will have  5% false positive and 20% false negative.
+Want an N samples that show a 5% false positive and 20% false negative.
 
 <br>
 
@@ -390,10 +389,10 @@ $$
 - $\Delta$: How much of a difference is needed to make the change
   - It cost money to make a change
   - Increase to bottom line needs to be significant, to accept risk
-    -  _Example_: Trader Janes Pizza needs sales to increase by 3%
+    -  _Example_: Trader Jane's Pizza needs sales to increase by 3%
 - $\sigma_\Delta$: estimated by business historical data
   - $\sigma_\Delta$ = $~\sqrt{2 \sigma_{log}^2}$
-    - $\sigma_{log}$: How much does sales fluctuate 
+    - $\sigma_{log}$: How much does sales fluctuate over a given time period.
 
 ---
 
@@ -428,6 +427,14 @@ More on this later
 
 ### Where does 2.48 comes from?
 
+<br>
+<br>
+
+
+$$
+N > 2.48 \left( \frac{\sigma_\Delta}{\Delta} \right)^2
+$$
+
 ---
 
 ## Rules of Thumb: 20 / 5 Rule { background-image='img/bluebox.svg' background-size="100% 100% " background-position="0%  center" }
@@ -451,18 +458,14 @@ $$
 - A is better but, you implemented B
 - incurs an explicit cost
 
-
-<br>
-
 :::
 :::{.column}
 
 **False negative** 
 
 - B is better but, you stuck with A
-- incurs an explicit cost
+- incurs an implicit cost
 
-<br>
 
 :::
 ::::
@@ -471,17 +474,20 @@ $$
 ::::{.columns}
 :::{.column}
 
-| $\alpha$ == **False Positive rate** (5%: 1.64)
+| $\alpha$ == **False Positive rate** 
+
+* 5% => $z_{score}$ = -1.64
 
 <br>
 
 | You can assume B is better than A
 
-
 :::
 :::{.column}
 
-| $\beta$== **False Negative rate** (20%: 0.84)
+| $\beta$== **False Negative rate** 
+
+* 20% => $z_{score}$ = 0.84
 
 <br>
 
@@ -496,15 +502,20 @@ $$
 #### From Standard Normal Distribution
 
 ::::{.columns}
-:::{.column width=25%}
+:::{.column width=32%}
 
 
 **Mean** is 0
 
 <br>
 
-**Standard deviation:** <br>
-$\sigma$ = 1
+**Standard deviation**: $\sigma$
+
+
+<br>
+
+$z_{score}$ measures the distance between a 
+ point and the mean in units of $\sigma$
 
 ----
 <br>
@@ -520,14 +531,12 @@ $$
 $$
 
 <br>
-<br>
-<br>
-<br>
 
-Graph from [@norm-dist]
+
+* *Graph [@norm-dist]
 
 :::
-:::{.column width=74%}
+:::{.column width=68%}
 
 <iframe width=720px height=530px src="norm-dist.html"></iframe>
 
@@ -544,7 +553,9 @@ Graph from [@norm-dist]
 
 ### False Positive 
 
-| $\alpha$ == **False Positive rate** (5%: 1.64)
+| $\alpha$ == **False Positive rate** 
+
+* 5% => $z_{score}$ = -1.64
 
 <br>
 
@@ -556,7 +567,9 @@ Graph from [@norm-dist]
 
 ### False Negative 
 
-| $\beta$== **False Negative rate** (20%: 0.84)
+| $\beta$== **False Negative rate** 
+
+* 20% => $z_{score}$ = 0.84
 
 <br>
 
@@ -587,7 +600,9 @@ Graph from [@norm-dist]
 ---
 
 ## { background-image='img/bluebox.svg' background-size="100% 100% " background-position="0%  center" }
-Yeah, we have our minimal viable test.
+### Yeah,
+
+we have our minimal viable test.
 
 <br>
 
@@ -601,7 +616,7 @@ One more thing to worry about
 <br>
 
 
-### Can this harm our customers?
+### Can this (change/test) harm our customers?
 
 ---
 
@@ -611,16 +626,23 @@ If we implement B, how F--ed up will that make the users?
 
 <br>
 
-### Social Sites
-Group mindset has been around since the 1950's.
-Current research shows that our minds physically change when we work together [@change-minds].
+If we tested B, how F--ed up will that make the users?
 
-So it is scary to read A/B Testing being done on users without consent, knowledge and at this scale.
-These are some of the ones we know about.
+---
+
+### Social Sites
+A/B Testing is being done on users without consent, knowledge and at scale (100K of users).
+
+<br>
+
+Group mindset has been around since the 1950's.
+Current research shows that our minds physically change when we work together [@change-minds] socially.
+
+So it is scary to read 
 
 * Facebook: Tested their algorithm to see if it really does radicalize people [@facebook-radical]
-* Linked-In: Tested on 20 million users to find out how links affect jobs [@linkedin-jobs]
-* Facebook: 700,000 users to see if they can make them sad [@facebook-sad]
+* LinkedIn: Tested on 20 million users to find out how links affect people's career/jobs [@linkedin-jobs]
+* Facebook: Tested on 700,000 users to see if they can make them sad [@facebook-sad]
 
 ### Health Care
 
@@ -657,7 +679,11 @@ Not required for companies that work with schools (state and local funding) and 
 
 ### F potential
 
-In light of this, I propose researchers use the F potential
+In light of this, I propose researchers use the F potential.
+
+<br>
+
+(Currently, not a real thing.  Just something to think about.)
 
 ---
 
@@ -673,11 +699,16 @@ F_{upped} =  \begin{cases}
      \end{cases}
 $$
 
-If $F_{upped}$ >0, test should be a no go.
+If $F_{upped}$ > 0, test should be a no-go.
 
 If $F_{upped}$ < 0, $\Delta$ should be halved. 
 
-* e.g. the amount of gain the company needs to make from change, should be halved.
+* e.g. $\Delta$ is the amount of gain the company needs to make the change.
+
+<br>
+
+_Example_: Trader Jane's Pizza needs sales to increase by 3% ($\Delta$). <br>
+If pizza made people better, then $\Delta=1.5\%$.
 
 ---
 
@@ -868,7 +899,7 @@ cut off women's voices.  He wrote a letter titled "_Understanding Women_".
 
 <br>
 
-He states that men traditionally have an inability to understand women except when there tone is soft.  
+He states that men traditionally have an inability to understand women except when their tone is soft.  
 So, it is a "biological failing of women" [@shrill] that we can't understand them.  $\therefore$ _The technology as is, is good._  
 
 <hr>
@@ -951,8 +982,8 @@ This variation, **might** affect a user's behavior.
 ### Your A/B Testing should:
 
 * Make the company more successful.
-* Follow some ethical guild lines, like the **$F_{upped}$** potential
-   - If $F_{upped}$ >0, test should be a no go.
+* Follow some ethical guidelines, like the **$F_{upped}$** potential
+   - If $F_{upped}$ > 0, test should be a no-go.
    - If $F_{upped}$ < 0, $\Delta$ should be halved. 
 
 <br>
@@ -960,6 +991,7 @@ This variation, **might** affect a user's behavior.
 <br>
 
 ### A/B Testing has Risk
+
 No free lunch.  
 Even after testing, test results might not make the company more successful.
 
@@ -968,16 +1000,18 @@ Even after testing, test results might not make the company more successful.
 
 ## Thank you { background-image='img/bluebox.svg' background-size="100% 100% " background-position="0%  center" }
 
+Please check out Gem City Tech.
+
+<br>
+
 ### Gem City Tech
+
+
+Gem City TECH’s mission is to grow the local industry and the community by providing a centralized destination for technical training, workshops and providing a forum for collaborating.
 
 ::::{.columns}
 :::{.column width=72%}
 
-GemCity TECH’s mission is to grow the local industry and the community by providing a centralized destination for technical training, workshops and providing a forum for collaborating.
-
-<br>
-
-Currently, support many special interest groups from a variety of technical disciplines.
 
 - Dayton Web Developers
 - Dayton Dynamic Languages
@@ -996,6 +1030,7 @@ Currently, support many special interest groups from a variety of technical disc
 :::
 ::::
 
+<hr>
 
 **Evelyn Boettcher
 ejb@DiDacTex.com**
